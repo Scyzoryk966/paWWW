@@ -49,7 +49,6 @@ nav {
     padding:15px;
     text-align:left;
     word-spacing: 15px;
-    z-index: 2;
   }
 
 nav a:link {                                   /*MENU1*/
@@ -97,7 +96,9 @@ main {
 main li{
     padding: 5px 5px 5px 15px;
 }
-
+main input{
+    margin: 20px;
+}
 aside {
     overflow: hidden;
     float: left;
@@ -151,12 +152,14 @@ p {
     color: #fff;
     text-align: justify;
     margin:0;
-    padding:15px;
+    padding:30px;
 }
 
 pre {
     background-color: black;
     color: yellow;
+    margin-left: 2%;
+    margin-right: 2%;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -171,7 +174,7 @@ pre {
         width: 100%;
 
     }
-    main, aside.bottom {
+    main, aside.bottom{
         font-size: 140%;
         width: 100%;
         padding: 0;
@@ -185,6 +188,20 @@ pre {
     }
     aside.top{
         font-size: 140%;
+    }
+    aside.bottom p {
+        font-size: 140%;
+    }
+    footer{
+        width: 100%;
+        margin-top: 1%;
+        padding: 0;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    footer p {
+        text-align: center;
+        padding: 15px;
     }
 }
 
