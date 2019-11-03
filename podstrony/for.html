@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+  <head>
+      <link rel="stylesheet" href="../css/style.css" type="text/css"/>
+      <link rel="shortcut icon" href="../img/logo.png"/>
+      <meta charset="utf-8">
+      <meta http-equiv="Creation-Date" content="2019-11-03 17:38" />
+      <meta http-equiv="reply-to" content="muszas@gmail.com" />
+      <title>JavaScript</title>
+      <!--Syntax!-->
+  </head>
+  <body> 
+    <header>
+      <a href="../index.html"><img src="../img/logo.png"  alt=""></a>
+    </header>
+    <nav class="zaokTOP">
+      <a href="../index.html">Zadania</a>
+      <a href="../inne/index.html">Skrypty</a>          
+    </nav>
+    <main><h1 style="text-align: center;">Pętla For</h1></div>
+      <p>Stworzenie skryptu który ma po kolei wykonać kilka operacji jest proste, jak to przedstawiłem w poprzednich lekcjach kursu. Jednak nierzadko zdarza się iż pewną operację lub sekwencję operacji warto byłoby wykonać wielokrotnie, chociażby z tego względu aby zaoszczędzić sobie pisania. Owszem można skopiować dany fragment skryptu tyle razy ile potrzeba, ale do jest kiepskie rozwiązanie. Po pierwsze tak przygotowany skrypt jest trudny w utrzymaniu - wyobraź sobie tylko że skopiowałeś(aś) go 20 razy, i musisz w tych 20 miejscach nanieść jakąś poprawkę. Po drugie takie podejście nie zawsze jest możliwe - czasami trzeba powtarzać daną operację, za każdym razem sprawdzając czy określony warunek jest spełniony (np. wczytywać od użytkownika kolejne liczby aż do momentu aż wpisze on liczbę zero). Do rozwiązania tego typu problemów stosuje się pętle. Użycie pętli spowoduje że określony fragment skryptu będzie wykonany określoną z góry ilość razy, lub też do momentu aż podany warunek zostanie spełniony.Wykonamy nastepujacy skrypt:</p>
+
+<pre>
+    &lt;script type="text/javascript">
+
+    for (var i=1;i<=50;i++) {
+    if(i%2 !=0){
+        document.write("<br>");
+    }
+    else{
+    document.write(+i);
+    continue}
+    }
+    &lt;/script>
+</pre>
+
+<input type="button" id="guzik" value="Kliknij aby wykonać program" />
+        <script type="text/javascript">
+            function wypisz() {
+
+
+                    for (var i=1;i<=50;i++) {
+                    if(i%2 !== 0){
+                        document.write("<br>");
+                    }
+                    else{
+                    document.write(+i);
+                    continue
+                    }
+                    }
+
+                            document.write("<br><form action=\"../podstrony/for.html\"><input type=\"submit\" value=\"Powrót do artykulu\" /></form>");
+                            document.write("<form action=\"../index.html\"><input type=\"submit\" value=\"Powrót do zadan\" /></form>");
+                        }
+
+                        document.getElementById('guzik').onclick = wypisz
+        </script>
+
+ <p>Program wypisującydaną ilosć kratek:</p>
+<pre>
+    &lt;script type= "text/JavaScript">
+    var e=prompt("Podaj liczbe f " , "" );
+    var f;
+    for (f=1;f<=e;f++)
+        {
+        document.write("#");
+        }
+    document.write("<br>");
+    &lt;/script>
+</pre>
+ <!--Guzik2!-->
+<input type="button" id="guzik2" value="Kliknij aby wykonać program" />
+    <script type="text/javascript">
+    function wypisz() {
+
+            var a = prompt("Podaj liczbe kratek ", "" );
+            var i;
+            for (i=1;i<=a;i++)
+            {
+            document.write("#");
+            }
+            document.write("<br>");
+
+                    document.write("<br><form action=\"../podstrony/for.html\"><input type=\"submit\" value=\"Powrót do artykulu\" /></form>");
+                    document.write("<form action=\"../index.html\"><input type=\"submit\" value=\"Powrót do zadan\" /></form>");
+            }
+
+                document.getElementById('guzik2').onclick = wypisz
+    </script>
+<p>Program wypisujący trójkąt prostokatny o danej podstawie:</p>
+<pre>
+    &lt;script type="text/javascript">
+
+    var a=prompt("Podaj liczbe a " , "" );
+
+    var c;
+    var d;
+    var e=1;
+        for (c=1;c<=a;c++)
+        {
+            for (d=1;d<=e;d++)
+            {
+            document.write("#")
+
+            }
+        e++;
+        document.write("<br>")
+        }
+
+    document.write("<Br> <br> <br>");
+
+
+    &lt;/script>
+</pre>
+ <!--Guzik3!-->
+<input type="button" id="guzik3" value="Kliknij aby wykonać program" />
+    <script type="text/javascript">
+    function wypisz() {
+
+var a=prompt("Podaj liczbe a " , "" );
+
+var c;
+var d;
+var e=1;
+	for (c=1;c<=a;c++)
+	{
+		for (d=1;d<=e;d++)
+		{
+		document.write("#")
+
+		}
+	e++;
+	document.write("<br>")
+	}
+
+document.write("<Br> <br> <br>");
+
+
+
+        document.write("<br><form action=\"../podstrony/for.html\"><input type=\"submit\" value=\"Powrót do artykulu\" /></form>");
+        document.write("<form action=\"../index.html\"><input type=\"submit\" value=\"Powrót do zadan\" /></form>");
+}
+
+    document.getElementById('guzik3').onclick = wypisz
+</script>
+<p>Program wypisujący Prostokat o podanych bokach:</p>
+<pre>
+    &lt;script type= "text/JavaScript">
+    var a=prompt("Podaj liczbe a " , "" );
+    var b=prompt("Podaj liczbe b " , "" );
+    var c;
+    var d;
+    for (c=1;c<=a;c++)
+    {
+        for (d=1;d<=b;d++)
+        {
+            document.write("#")
+        }
+        document.write("<br>")
+    }
+    document.write("<Br> <br> <br>");
+    &lt;/script>
+</pre>
+ <!--Guzik4!-->
+<input type="button" id="guzik4" value="Kliknij aby wykonać program" />
+    <script type="text/javascript">
+    function wypisz() {
+
+var a=prompt("Podaj liczbe a " , "" );
+var b=prompt("Podaj liczbe b " , "" );
+var c;
+var d;
+for (c=1;c<=a;c++)
+{
+for (d=1;d<=b;d++)
+{
+document.write("#")
+}
+document.write("<br>")
+}
+document.write("<Br> <br> <br>");
+
+
+
+        document.write("<br><form action=\"../podstrony/for.html\"><input type=\"submit\" value=\"Powrót do artykulu\" /></form>");
+        document.write("<form action=\"../index.html\"><input type=\"submit\" value=\"Powrót do zadan\" /></form>");
+}
+
+    document.getElementById('guzik4').onclick = wypisz
+</script>
+<!--Guzik3!-->
+<input type="button" id="guzik3" value="Kliknij aby wykonać program" />
+    <script type="text/javascript">
+    function wypisz() {
+
+var a=prompt("Podaj liczbe a " , "" );
+
+var c;
+var d;
+var e=1;
+	for (c=1;c<=a;c++)
+	{
+		for (d=1;d<=e;d++)
+		{
+		document.write("#")
+
+		}
+	e++;
+	document.write("<br>")
+	}
+
+document.write("<Br> <br> <br>");
+
+
+
+        document.write("<br><form action=\"../podstrony/for.html\"><input type=\"submit\" value=\"Powrót do artykulu\" /></form>");
+        document.write("<form action=\"../index.html\"><input type=\"submit\" value=\"Powrót do zadan\" /></form>");
+}
+
+    document.getElementById('guzik3').onclick = wypisz
+</script>
+<p>Program wypisujący tabliczke mnoczenia danych liczb:</p>
+<pre>
+    var a=prompt("Podaj liczbe a " , "" );
+    var b=prompt("Podaj liczbe b " , "" );
+    var i;
+    var j;
+    for(i=a;i<=b;i++) {
+        for (j=a;j<=b;j++)
+        {
+        document.write(j*i+" ")
+        }
+    document.write("<br>")
+    }
+</pre>
+ <!--Guzik5!-->
+<input type="button" id="guzik5" value="Kliknij aby wykonać program" />
+    <script type="text/javascript">
+    function wypisz() {
+ 
+var a=prompt("Podaj liczbe a " , "" );
+var b=prompt("Podaj liczbe b " , "" );
+var i;
+var j;
+for(i=a;i<=b;i++) {
+	for (j=a;j<=b;j++)
+	{
+	document.write(j*i+" ")
+	}
+document.write("<br>")
+}
+
+        document.write("<br><form action=\"../podstrony/for.html\"><input type=\"submit\" value=\"Powrót do artykulu\" /></form>");
+        document.write("<form action=\"../index.html\"><input type=\"submit\" value=\"Powrót do zadan\" /></form>");
+}
+ 
+    document.getElementById('guzik5').onclick = wypisz
+</script>  
+ </main>
+    <footer> Damian Szefler Copyright 2019</footer>
+
+  </body>
+</html>

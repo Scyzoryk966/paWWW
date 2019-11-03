@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+  <head>
+      <link rel="stylesheet" href="../../css/style.css" type="text/css"/>
+      <link rel="shortcut icon" href="../../img/logo.png"/>
+      <meta charset="utf-8">
+      <meta http-equiv="Creation-Date" content="2019-11-03 17:38" />
+      <meta http-equiv="reply-to" content="muszas@gmail.com" />
+      <title>JavaScript</title>
+      <!--Syntax!-->
+  </head>
+  <body> 
+    <header>
+      <img src="../../img/logo.png"  alt="">
+    </header> 
+    <nav class="zaokTOP">
+      <a href="../../index.html">Zadania</a>
+      <a href="../index.html">Skrypty</a>          
+    </nav>   
+    <main><h1 style="text-align: center;">CheckBox</h1>
+
+<pre>&lt;script type="text/javascript">
+		function f1(formularz) {
+		window.open("http://www.google.pl");
+		}
+		function f2(formularz) { 
+		window.location.replace("http://www.onet.pl");
+		}
+		function f3(formularz) { 
+		window.location.replace("http://www.wp.pl");
+		}
+			
+	&lt;/script></pre>
+
+<script type="text/javascript">
+		function f1(formularz) {
+		window.open("http://www.google.pl");
+		}
+		function f2(formularz) { 
+		window.location.replace("http://www.onet.pl");
+		}
+		function f3(formularz) { 
+		window.location.replace("http://www.wp.pl");
+		}
+			
+	</script>
+	<h2>Wybierz odpowiednie pole do przejscia na dana stronę:</h2>
+	 <input type="checkbox" name="google.pl" onClick="f1(this.form)"> Google<br>
+	 <input type="checkbox" name="onet.pl" onClick="f2(this.form)"> Onet <br>
+	 <input type="checkbox" name="wp.pl" onClick="f3(this.form)"> WP<br>
+    </main> 
+    <footer> Damian Szefler Copyright 2019 </footer>
+  </body>
+</html>

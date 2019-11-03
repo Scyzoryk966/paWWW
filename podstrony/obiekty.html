@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <link rel="stylesheet" href="../css/style.css" type="text/css"/>
+    <link rel="shortcut icon" href="../img/logo.png"/>
+    <meta charset="utf-8">
+    <meta http-equiv="Creation-Date" content="2019-11-03 17:38" />
+    <meta http-equiv="reply-to" content="muszas@gmail.com" />
+    <title>JavaScript</title>
+    <!--Syntax!-->
+</head>
+  <body> 
+    <header>
+        <a href="../index.html"><img src="../img/logo.png"  alt=""></a>
+    </header> 
+    <nav class="zaokTOP">
+      <a href="../index.html">Zadania</a>
+      <a href="../inne/index.html">Skrypty</a>           
+    </nav>   
+    <main><h1 style="text-align: center;">Obiekty</h1>
+      <p>Pewnie słyszeliście już nazwę "programowanie obiektowe"? Jeżeli jeszcze nie programowaliście obiektowo, to nie ma się co martwić - JavaScript właściwie cała opiera się na programowaniu obiektowym ;).
+W waszych skryptach nieraz i nie dwa odwołujecie się do obiektów. Na przykład window, document, button itp. to typowe obiekty, które posiadają swoje metody i właściwości :).
+
+Oczywiście jak i inne języki, tak i Javascript umożliwia tworzenie własnych obiektów. Początkowo może się wam wydawać, ze jest to nie za bardzo użyteczne (w końcu można większość rzeczy zrobić przy pomocy funkcji itp), ale gdy zaznajomicie się z obiektami na pewno zmienicie zdanie. Przede wszystkim obiekty dają nam ochronę danych. Dziwnie brzmi prawda? Na stronie nie raz tworzyłeś button. Każdy z nich ma np. metodę onclick, właściwość value itp. Nie ma żadnego konfliktu w skrypcie, mimo tego, że obiekty te mają metody i właściwości takie same jak ich "bracia". Poza tym programowanie obiektowe jest najbardziej bliskie rzeczywistości. Zapraszam do lektury.</p>
+<p>Aby utworzyć nowy pojedynczy obiekt możemy skorzystamy z poniższej konstrukcji:</p>
+<pre>var obiekt_1 = {
+    imie: "Marcin",
+    wzrost: 184,
+    wypisz : function() {
+        alert(this.imie)
+    }
+}</pre>
+
+
+<p>Tworzenie obiektu za pomocą konstruktora:</p>
+
+<pre>
+function _KlasaObiektu(_width,_height) {
+    this.width = _width;
+    this.height = _height;
+    this.wypisz = function() {
+        alert(this.width + 'x' + this.height)
+    }
+}
+
+</pre>
+
+<p>Wykonamy nastepujacy skrypt:</p>
+<pre>
+&lt;script type= "text/JavaScript">
+function Biblioteka(dzial, tytol, autor, ilosc , wydawnictwo , sprzedajacy) {
+this.dzial=dzial;
+this.tytol=tytol;
+this.autor=autor;
+this.ilosc=ilosc;
+this.wydawnictwo=wydawnictwo;
+this.sprzedajacy=sprzedajacy;
+}
+function imiee(imie, nazwisko){
+this.imie=imie;
+this.nazwisko=nazwisko;
+}
+
+
+var z=true;
+while (z!=false){
+z=confirm("Chcesz wprowadzać dane dalej?");
+if (z!=true) 
+{ 
+break
+}
+
+var a=prompt("Podaj dział");
+var b=prompt("Podaj tytuł");
+var c=prompt("Podaj autor");
+var d=prompt("Podaj ilość");
+var e=prompt("Podaj wydawnictwo");
+var f=prompt("Podaj imie spr");
+var g=prompt("Podaj nazwisko spr");
+
+
+
+spr=new imiee(f, g);
+
+ksiazka=new Biblioteka(a,b,c,d,e, spr);
+document.write(" <b> Dział: </b> " + ksiazka.dzial  + " <br> ");
+document.write(" <b> Tytuł: </b> " + ksiazka.tytol  + " <br> ");
+document.write(" <b> Autor: </b> " + ksiazka.autor  + " <br> ");
+document.write(" <b> Ilość: </b> " + ksiazka.ilosc  + " <br> ");
+document.write(" <b> Wydawnictwo: </b> " + ksiazka.wydawnictwo  + " <br>");
+document.write(" <b> Srzedajacy: </b> " + ksiazka.sprzedajacy.imie+" " +ksiazka.sprzedajacy.nazwisko  + " <br>  <br> ");
+}
+&lt;/script>
+</pre>
+
+<input type="button" id="guzik" value="Kliknij aby wykonać program" />
+
+<script type="text/javascript">
+    function wypisz() {
+
+function Biblioteka(dzial, tytol, autor, ilosc , wydawnictwo , sprzedajacy) {
+this.dzial=dzial;
+this.tytol=tytol;
+this.autor=autor;
+this.ilosc=ilosc;
+this.wydawnictwo=wydawnictwo;
+this.sprzedajacy=sprzedajacy;
+}
+function imiee(imie, nazwisko){
+this.imie=imie;
+this.nazwisko=nazwisko;
+}
+
+
+var z=true;
+while (z!=false){
+z=confirm("Chcesz wprowadzać dane dalej?");
+if (z!=true) 
+{ 
+break
+}
+
+var a=prompt("Podaj dział");
+var b=prompt("Podaj tytuł");
+var c=prompt("Podaj autor");
+var d=prompt("Podaj ilość");
+var e=prompt("Podaj wydawnictwo");
+var f=prompt("Podaj imie spr");
+var g=prompt("Podaj nazwisko spr");
+
+
+
+spr=new imiee(f, g);
+
+ksiazka=new Biblioteka(a,b,c,d,e, spr);
+document.write(" <b> Dział: </b> " + ksiazka.dzial  + " <br> ");
+document.write(" <b> Tytuł: </b> " + ksiazka.tytol  + " <br> ");
+document.write(" <b> Autor: </b> " + ksiazka.autor  + " <br> ");
+document.write(" <b> Ilość: </b> " + ksiazka.ilosc  + " <br> ");
+document.write(" <b> Wydawnictwo: </b> " + ksiazka.wydawnictwo  + " <br>");
+document.write(" <b> Srzedajacy: </b> " + ksiazka.sprzedajacy.imie+" " +ksiazka.sprzedajacy.nazwisko  + " <br>  <br> ");
+}
+
+
+        document.write("<br><form action=\"../podstrony/obiekty.html\"><input type=\"submit\" value=\"Powrót do artykulu\" /></form>");
+        document.write("<form action=\"../index.html\"><input type=\"submit\" value=\"Powrót do zadan\" /></form>");
+    }
+ 
+    document.getElementById('guzik').onclick = wypisz
+</script>
+
+    </main> 
+    <footer> Damian Szefler Copyright 2019 </footer>
+
+  </body>
+</html>

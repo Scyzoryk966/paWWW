@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <link rel="stylesheet" href="../../css/style.css" type="text/css"/>
+  <link rel="shortcut icon" href="../../img/logo.png"/>
+  <meta charset="utf-8">
+  <meta http-equiv="Creation-Date" content="2019-11-03 17:38" />
+  <meta http-equiv="reply-to" content="muszas@gmail.com" />
+  <title>JavaScript</title>
+  <!--Syntax!-->
+  </head>
+  <body> 
+    <header>
+      <img src="../../img/logo.png"  alt="">
+    </header> 
+    <nav class="zaokTOP">
+      <a href="../../index.html">Zadania</a>
+      <a href="../index.html">Skrypty</a>          
+    </nav>   
+    <main><h1 style="text-align: center;">Silnia</h1>
+
+<pre>&lt;script language="JavaScript">
+var x = prompt ("Podaj liczbę której silnie chcesz obliczyć");
+var s = 1;
+for (i=1;i<=x;i++)
+{
+	s*=i;
+	}
+	document.write (x + "!=" + s)
+	
+&lt;/script></pre>
+
+<input type="button" id="guzik" value="Kliknij aby wykonać program" />
+
+<script type="text/javascript">
+    function wypisz() {
+
+var x = prompt ("Podaj liczbę której silnie chcesz obliczyć");
+var s = 1;
+for (i=1;i<=x;i++)
+{
+	s*=i;
+	}
+	 alert(x + "!=" + s)
+	
+    }
+ 
+    document.getElementById('guzik').onclick = wypisz
+</script>
+
+    </main> 
+    <footer> Damian Szefler Copyright 2019 </footer>
+  </body>
+</html>

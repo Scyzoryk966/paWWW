@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head lang="pl-PL">
+  <link rel="stylesheet" href="../../css/style.css" type="text/css"/>
+  <link rel="shortcut icon" href="../../img/logo.png"/>
+  <meta charset="utf-8">
+  <meta http-equiv="Creation-Date" content="2019-11-03 17:38" />
+  <meta http-equiv="reply-to" content="muszas@gmail.com" />
+  <title>JavaScript</title>
+  <!--Syntax!-->
+  </head>
+  <body> 
+    <header>
+      <img src="../../img/logo.png"  alt="">
+    </header> 
+    <nav class="zaokTOP">
+      <a href="../../index.html">Zadania</a>
+      <a href="../index.html">Skrypty</a>          
+    </nav>   
+    <main><h1 style="text-align: center;">Ilość formularzy</h1>
+
+<pre>&lt;script type="text/javascript">
+
+function przetwarzaj_dane (){ 
+ document.forms[0].liczba.value = document.forms.length 
+} 
+
+&lt;/script> </pre>
+
+		<script type="text/javascript">
+
+function przetwarzaj_dane (){ 
+ document.forms[0].liczba.value = document.forms.length 
+} 
+
+</script>
+
+<FORM NAME = "formularz1"> 
+Ilość formularzy w dokumencie:
+<input type = "text" name = "liczba" > 
+</FORM> 
+<form name = "formularz2"> 
+<input type = "button" value = "Sprawdz" onClick = "przetwarzaj_dane()"> 
+</form>
+<form name = "formularz3">
+</form>
+
+    </main> 
+    <footer> Damian Szefler Copyright 2019 </footer>
+
+  </body>
+</html>

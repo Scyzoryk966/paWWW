@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <link rel="stylesheet" href="../../css/style.css" type="text/css"/>
+    <link rel="shortcut icon" href="../../img/logo.png"/>
+    <meta charset="utf-8">
+    <meta http-equiv="Creation-Date" content="2019-11-03 17:38" />
+    <meta http-equiv="reply-to" content="muszas@gmail.com" />
+    <title>JavaScript</title>
+    <!--Syntax!-->
+  </head>
+  <body> 
+    <header>
+      <img src="../../img/logo.png"  alt="">
+    </header> 
+    <nav class="zaokTOP">
+      <a href="../../index.html">Zadania</a>
+      <a href="../index.html">Skrypty</a>          
+    </nav>   
+    <main><h1 style="text-align: center;">Logowanie</h1>
+
+<pre>&lt;script language="JavaScript">
+	&lt;script type="text/javascript">
+		function logowanie(formularz){
+		if(formularz.login.value=="" || formularz.pass.value=="")
+		alert("Najpierw wypełnij oba pola");
+		
+		else
+		window.location.replace("http://www.google.com/");
+		}
+	&lt;/script>
+&lt;form name="formularz1">
+	Login: &lt;input type="text" name="login"><br><br>
+	Hasło: &lt;input type="password" name="pass"><br><br>
+	&lt;input type="button" value="Login" onClick="logowanie(this.form)">
+	&lt;input type="reset">
+	&lt;/form></pre>
+
+	<script type="text/javascript">
+		function logowanie(formularz){
+		if(formularz.login.value==="" || formularz.pass.value==="")
+		alert("Najpierw wypełnij oba pola");
+		
+		else
+		window.location.replace("http://www.google.com/");
+		}
+	</script>
+<form name="formularz1">
+	Login: <input type="text" name="login"><br><br>
+	Hasło: <input type="password" name="pass"><br><br>
+	<input type="button" value="Login" onClick="logowanie(this.form)">
+	<input type="reset">
+	</form>
+
+    </main> 
+    <footer> Damian Szefler Copyright 2019 </footer>
+  </body>
+</html>

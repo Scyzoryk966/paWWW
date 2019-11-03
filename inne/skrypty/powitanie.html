@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+  <link rel="stylesheet" href="../../css/style.css" type="text/css"/>
+  <link rel="shortcut icon" href="../../img/logo.png"/>
+  <meta charset="utf-8">
+  <meta http-equiv="Creation-Date" content="2019-11-03 17:38" />
+  <meta http-equiv="reply-to" content="muszas@gmail.com" />
+  <title>JavaScript</title>
+  <!--Syntax!-->
+  </head>
+  <body onunload =Poz(a);> 
+    <header>
+      <img src="../../img/logo.png"  alt="">
+    </header> 
+    <nav class="zaokTOP ">
+      <a href="../../index.html">Zadania</a>
+      <a href="../index.html">Skrypty</a>          
+    </nav>   
+    <main><h1 style="text-align: center;">Powitanko</h1>
+
+<pre>2019script type="text/javascript">
+	
+	var a= prompt("Podaj imie");
+	
+	while(a=="")
+	{
+	var a= prompt("Nie podałeś.Podaj imie ");
+	}
+	document.write("Witaj " + a);
+	
+	function Poz(b)
+	{
+	alert("Żegnaj " + b);
+	}
+	&lt;/script>
+&lt;body onunload =Poz(a);></pre>
+
+<input type="button" id="guzik" value="Kliknij aby wykonać program" />
+
+  <script type="text/javascript">
+	function wypisz() {
+	var a= prompt("Podaj imie");
+	
+	while(a=="")
+	{
+	var a= prompt("Nie podałeś.Podaj imie ");
+	}
+	document.write("Witaj " + a);
+	document.write("<br><form action=\"../skrypty/powitanie.html\"><input type=\"submit\" value=\"Powrót do artykulu\" /></form>");
+document.write("<form action=\"../index.html\"><input type=\"submit\" value=\"Powrót do zadan\" /></form>");
+	function Poz(b)
+	{
+	alert("Żegnaj " + b);
+	}
+}
+document.getElementById('guzik').onclick = wypisz
+	</script>
+
+
+    </main> 
+    <footer> Damian Szefler Copyright 2019 </footer>
+  </body>
+</html>

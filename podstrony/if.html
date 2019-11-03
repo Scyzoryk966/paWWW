@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pl-PLS">
+  <head>
+    <link rel="stylesheet" href="../css/style.css" type="text/css"/>
+    <link rel="shortcut icon" href="../img/logo.png"/>
+    <meta charset="utf-8">
+    <meta http-equiv="Creation-Date" content="2019-11-03 17:38" />
+    <meta http-equiv="reply-to" content="muszas@gmail.com" />
+    <title>JavaScript</title>
+    <!--Syntax!-->
+  </head>
+  <body> 
+    <header>
+        <a href="../index.html"><img src="../img/logo.png"  alt=""></a>
+    </header> 
+    <nav class="zaokTOP">
+      <a href="../index.html">Zadania</a>
+      <a href="../inne/index.html">Skrypty</a>          
+    </nav>   
+    <main><h1 style="text-align: center;">Instrukcja warunkowa</h1>
+      <p>Do stworzenia prostego skryptu wystarczy użyć kilku (lub więcej) instrukcji, które zostaną wykonane sekwencyjnie (jedna po drugiej), tak jak były zapisane. W praktyce jednak takie proste skrypty są rzadkością - zdecydowanie częściej w skrypcie trzeba wykonać (lub nie) dany fragment kodu w zależności od tego czy określony warunek będzie spełniony (lub też odwrotnie). Do tego celu właśnie służą instrukcje warunkowe, które omówię w tej części kursu.
+
+Instrukcje warunkowe służą do decydowania który fragment kodu powinien zostać wykonany w zależności od spełnienia określonych warunków; inaczej mówiąc służą do rozgałęzienia ścieżki wykonywania skryptu. Wykonamy nastepujace skrypty:</p>
+
+<pre>
+  &lt;script type="text/javascript">
+  var a = prompt("Podaj imie...", "...");
+    if (a!=null){
+        document.write("Witaj "+a+" !");
+        }
+    else {
+        document.write("Nie podałeś imienia!");
+        }
+&lt;/script>
+</pre>
+
+<input type="button" id="guzik" value="Kliknij aby wykonać program" />
+
+<script type="text/javascript">
+    function wypisz() {
+var a = prompt("Podaj imie...");
+if (a==null){
+
+document.write("Nie podałeś imienia!");
+}
+else {
+document.write("Witaj "+a+" !");
+}
+
+
+        document.write("<br><form action=\"../podstrony/if.html\"><input type=\"submit\" value=\"Powrót do artykulu\" /></form>");
+        document.write("<form action=\"../index.html\"><input type=\"submit\" value=\"Powrót do zadan\" /></form>");
+    }
+ 
+    document.getElementById('guzik').onclick = wypisz
+</script>
+<!--Guzik2!-->
+
+<pre>
+  &lt;script type="text/javascript">
+
+	var a = prompt("Podaj A...", "...");
+	var b = prompt("Podaj B...", "...");
+	var c = prompt("Podaj C...", "...");
+	var delta;
+		delta = (b * b) - 4 * a * c;
+			if(delta>0){
+			alert("Wynik to: " +delta);
+			}
+			else{
+			alert("Jestes w dupie, delta jest ujemna");
+			}
+
+&lt;/script>
+</pre>
+
+<input type="button" id="guzik2" value="Kliknij aby wykonać program" />
+
+<script type="text/javascript">
+    function wypisz() {
+
+	var a = prompt("Podaj A...", "...");
+	var b = prompt("Podaj B...", "...");
+	var c = prompt("Podaj C...", "...");
+	var delta;
+		delta = (b * b) - 4 * a * c;
+			if(delta>0){
+			alert("Wynik to: " +delta);
+			}
+			else{
+			alert("Jestes w dupie, delta jest ujemna");
+			}
+
+    }
+ 
+    document.getElementById('guzik2').onclick = wypisz
+</script>
+
+    </main> 
+    <footer> Damian Szefler Copyright 2019 </footer>
+  </body>
+</html>

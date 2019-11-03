@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pl-PL" xmlns="http://www.w3.org/1999/html">
+<head>
+  <link rel="stylesheet" href="../../css/style.css" type="text/css"/>
+  <link rel="shortcut icon" href="../../img/logo.png"/>
+  <meta charset="utf-8">
+  <meta http-equiv="Creation-Date" content="2019-11-03 17:38" />
+  <meta http-equiv="reply-to" content="muszas@gmail.com" />
+  <title>JavaScript</title>
+  <!--Syntax!-->
+  </head>
+  <body> 
+    <header>
+      <img src="../../img/logo.png"  alt="">
+    </header>
+    <nav class="zaokTOP">
+      <a href="../../index.html">Zadania</a>
+      <a href="../index.html">Skrypty</a>          
+    </nav>
+    <main><h1 style="text-align: center;">Kalkulator</h1>
+
+<pre>&lt;input style="width:133px; height:30px;"id="screen" type="text"><br>
+
+&lt;input style="width:127px; height:30px;" style="width:127px; height:30px;"  type="button" value=1 onclick="pushButton(this.value);">
+&lt;input style="width:127px; height:30px;" type="button" value=2 onclick="pushButton(this.value);">
+&lt;input style="width:127px; height:30px;" type="button" value=3 onclick="pushButton(this.value);">
+&lt;input style="width:127px; height:30px;" type="button" value='/' onclick="pushButton(this.value);"><br>
+
+
+&lt;input style="width:127px; height:30px;" type="button" value=4 onclick="pushButton(this.value);">
+&lt;input style="width:127px; height:30px;" type="button" value=5 onclick="pushButton(this.value);">
+&lt;input style="width:127px; height:30px;" type="button" value=6 onclick="pushButton(this.value);">
+&lt;input style="width:127px; height:30px;" type="button" value='*' onclick="pushButton(this.value);"><br>
+
+
+&lt;input style="width:127px; height:30px;" type="button" value=7 onclick="pushButton(this.value);">
+&lt;input style="width:127px; height:30px;" type="button" value=8 onclick="pushButton(this.value);">
+&lt;input style="width:127px; height:30px;" type="button" value=9 onclick="pushButton(this.value);">
+&lt;input style="width:127px; height:30px;" type="button" value='-' onclick="pushButton(this.value);"><br>
+
+
+&lt;input style="width:127px; height:30px;" type="button" value=0 onclick="pushButton(this.value);">
+&lt;input style="width:127px; height:30px;" type="button" value='.' onclick="pushButton(this.value);">
+&lt;input style="width:127px; height:30px;" type="button" value='C' onclick="pushButton(this.value);">
+&lt;input style="width:127px; height:30px;" type="button" value='+' onclick="pushButton(this.value);"><br>
+&lt;input style="width:127px; height:30px;" class="calc" type="button" value='=' onclick="calculate(document.getElementById('screen').value);">
+
+
+&lt;script>
+
+function pushButton(buttonValue) {
+     if (buttonValue == 'C') {
+          document.getElementById('screen').value = '';
+     }
+     else {
+          document.getElementById('screen').value += buttonValue;
+     }
+}
+function calculate(equation) {
+     var answer = eval(equation);
+     document.getElementById('screen').value = answer;
+}
+&lt;/script></pre>
+<div style="text-align: center;">
+<input style="width:520px; height:30px;"id="screen" type="text"><br>
+
+<input style="width:127px; height:30px;" style="width:127px; height:30px;"  type="button" value=1 onclick="pushButton(this.value);">
+<input style="width:127px; height:30px;" type="button" value=2 onclick="pushButton(this.value);">
+<input style="width:127px; height:30px;" type="button" value=3 onclick="pushButton(this.value);">
+<input style="width:127px; height:30px;" type="button" value='/' onclick="pushButton(this.value);"><br>
+
+
+<input style="width:127px; height:30px;" type="button" value=4 onclick="pushButton(this.value);">
+<input style="width:127px; height:30px;" type="button" value=5 onclick="pushButton(this.value);">
+<input style="width:127px; height:30px;" type="button" value=6 onclick="pushButton(this.value);">
+<input style="width:127px; height:30px;" type="button" value='*' onclick="pushButton(this.value);"><br>
+
+
+<input style="width:127px; height:30px;" type="button" value=7 onclick="pushButton(this.value);">
+<input style="width:127px; height:30px;" type="button" value=8 onclick="pushButton(this.value);">
+<input style="width:127px; height:30px;" type="button" value=9 onclick="pushButton(this.value);">
+<input style="width:127px; height:30px;" type="button" value='-' onclick="pushButton(this.value);"><br>
+
+
+<input style="width:127px; height:30px;" type="button" value=0 onclick="pushButton(this.value);">
+<input style="width:127px; height:30px;" type="button" value='.' onclick="pushButton(this.value);">
+<input style="width:127px; height:30px;" type="button" value='C' onclick="pushButton(this.value);">
+<input style="width:127px; height:30px;" type="button" value='+' onclick="pushButton(this.value);"><br>
+<input style="width:127px; height:30px;" class="calc" type="button" value='=' onclick="calculate(document.getElementById('screen').value);">
+    </div>
+
+<script>
+
+function pushButton(buttonValue) {
+     if (buttonValue == 'C') {
+          document.getElementById('screen').value = '';
+     }
+     else
+          document.getElementById('screen').value += buttonValue;
+		  }
+
+
+function calculate(equation) {
+     var answer = eval(equation);
+     document.getElementById('screen').value = answer;
+}
+</script>
+
+    </main>
+    <footer> Damian Szefler Copyright 2019 </footer>
+  </body>
+</html>

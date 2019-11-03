@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+  <link rel="stylesheet" href="../../css/style.css" type="text/css"/>
+  <link rel="shortcut icon" href="../../img/logo.png"/>
+  <meta charset="utf-8">
+  <meta http-equiv="Creation-Date" content="2019-11-03 17:38" />
+  <meta http-equiv="reply-to" content="muszas@gmail.com" />
+  <title>JavaScript</title>
+  <!--Syntax!-->
+  </head>
+  <body> 
+    <header>
+      <img src="../../img/logo.png"  alt="">
+    </header> 
+    <nav class="zaokTOP">
+      <a href="../../index.html">Zadania</a>
+      <a href="../index.html">Skrypty</a>          
+    </nav>   
+    <main><h1 style="text-align: center;">Pole prostokąta</h1>
+
+<pre>&lt;script language="JavaScript">
+function licz(formularz) {
+if (formularz.a.value=="" | formularz.b.value=="")
+alert("Wprowadź dane");
+else{
+a=formularz.a.value;
+b=formularz.b.value;
+formularz.p.value=a*b;
+formularz.o.value=(2*a)+(b*2);
+}
+}
+	
+&lt;/script></pre>
+
+<script type="text/javascript">
+function licz(formularz) {
+if (formularz.a.value=="" | formularz.b.value=="")
+alert("Wprowadź dane");
+else{
+a=formularz.a.value;
+b=formularz.b.value;
+formularz.p.value=a*b;
+formularz.o.value=(2*a)+(b*2);
+}
+}
+</script>
+<form name="formularz1" action="">
+Podaj bok a: <input type="text" name="a"><br>
+Podaj bok b: <input type="text" name="b"><br>
+<input type="button" value="Oblicz" onClick="licz(this.form)"> <br>
+Wynik: <br>
+Pole prostokąta: <input type="text" name="p"> <br>
+Obwód prostokąta: <input type="text" name="o">
+</form>
+    </main>
+    <footer> Damian Szefler Copyright 2019 </footer>
+
+  </body>
+</html>

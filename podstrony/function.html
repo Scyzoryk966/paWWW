@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+  <head>
+    <link rel="stylesheet" href="../css/style.css" type="text/css"/>
+    <link rel="shortcut icon" href="../img/logo.png"/>
+    <meta charset="utf-8">
+    <meta http-equiv="Creation-Date" content="2019-11-03 17:38" />
+    <meta http-equiv="reply-to" content="muszas@gmail.com" />
+    <title>JavaScript</title>
+      <!--Syntax!-->
+  </head>
+  <body> 
+    <header>
+        <a href="../index.html"><img src="../img/logo.png"  alt=""></a>
+    </header> 
+    <nav class="zaokTOP">
+      <a href="../index.html">Zadania</a>
+      <a href="../inne/index.html">Skrypty</a>           
+    </nav>   
+    <main><h1 style="text-align: center;">Funkcja</h1>
+      <p>Gdy mąż słyszy od żony idź do sklepu, kup ziemniaki, wówczas zaczyna wykonywać pewien zbiór czynności. Za każdym razem, gdy usłyszy idź do sklepu, kup ziemniaki, wykona ten sam zbiór czynności (heh - do czasu...). W javascript takie czynności ujęte w grupę to właśnie funkcje.
+
+Funkcja jest wywoływana przez inną część skryptu (w realnym życiu przez żonę), a w momencie jej wywołania zostaje wykonywany kod w niej zawarty. Ogólny wygląd funkcji ma następującą postać:</p>
+
+<pre>function nazwa_funkcji() {
+    ...kod funkcji
+}
+ 
+//lub
+ 
+nazwa_funkcji = function() {
+    ...kod funkcji anonimowej
+}</pre>
+<p>Wykonamy nastepujace zadanie:<p>
+
+<pre>
+&lt;script type="text/javascript">
+function pisz() {
+    alert("To jest tekst zawarty w funkcji.");
+}
+ 
+pisz(); //odpalamy powyższą funkcję
+}
+&lt;/script>
+</pre>
+      <input type="button" id="guzik" value="Kliknij aby wykonać program" />
+      <script type="text/javascript">
+          function wypisz() {
+
+          alert("To jest tekst zawarty w funkcji.");
+
+          }
+
+          document.getElementById('guzik').onclick = wypisz
+      </script>
+    </main>
+    <footer> Damian Szefler Copyright 2019 </footer>
+
+  </body>
+</html>
