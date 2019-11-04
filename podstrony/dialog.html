@@ -1,53 +1,61 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <link rel="stylesheet" href="../css/style.css" type="text/css"/>
     <link rel="shortcut icon" href="../img/logo.png"/>
     <meta charset="utf-8">
-    <meta http-equiv="Creation-Date" content="2019-11-03 17:38" />
-    <meta http-equiv="reply-to" content="muszas@gmail.com" />
+    <meta http-equiv="Creation-Date" content="2019-11-03 17:38"/>
+    <meta http-equiv="reply-to" content="muszas@gmail.com"/>
     <title>JavaScript</title>
-      <!--Syntax!-->
-  </head>
-  <body> 
-    <header>
-      <a href="../index.html"><img src="../img/logo.png"  alt=""></a>
-    </header>
-    <nav class="zaokTOP">
-      <a href="../index.html">Zadania</a>
-      <a href="../inne/index.html">Skrypty</a>         
-    </nav>
-    <main>
-      <p>Z jednej strony okienka takie są łatwe we wdrożeniu i skuteczne (bo gdy się pojawią, nie pozwalają kliknąć niczego innego na stronie), z drugiej strony bardzo ładnie odciągają uwagę odwiedzającego od zawartości strony. Nie odradzam ich używania. Po prostu czasami trzeba się zastanowić, czy nie ma lepszej metody, by poinformować użytkownika o danym zdarzeniu. Przykładowo zamiast pokazywać alerta z informacją o źle wpisanym mailu, lepiej jest wyświetlić obok takiego pola czerwony znaczek czy coś symbolizującego, że ów pole jest źle wypełnione. Użytkowanie strony będzie wtedy o wiele przyjemniejsze.</p>
+    <!--Syntax!-->
+</head>
+<body>
+<header>
+    <a href="../index.html"><img src="../img/logo.png" alt=""></a>
+</header>
+<nav class="zaokTOP">
+    <a href="../index.html">Zadania</a>
+    <a href="../inne/index.html">Skrypty</a>
+</nav>
+<main>
+    <p>Z jednej strony okienka takie są łatwe we wdrożeniu i skuteczne (bo gdy się pojawią, nie pozwalają kliknąć
+        niczego innego na stronie), z drugiej strony bardzo ładnie odciągają uwagę odwiedzającego od zawartości strony.
+        Nie odradzam ich używania. Po prostu czasami trzeba się zastanowić, czy nie ma lepszej metody, by poinformować
+        użytkownika o danym zdarzeniu. Przykładowo zamiast pokazywać alerta z informacją o źle wpisanym mailu, lepiej
+        jest wyświetlić obok takiego pola czerwony znaczek czy coś symbolizującego, że ów pole jest źle wypełnione.
+        Użytkowanie strony będzie wtedy o wiele przyjemniejsze.</p>
 
-        <pre>alert('treść komunikatu');      //okienko alert
-        prompt('treść komunikatu');    //okienko prompt
-        confirm('treść komunikatu');    //okienko confirm</pre>
+    <pre>alert('treść komunikatu');      //okienko alert
+prompt('treść komunikatu');    //okienko prompt
+confirm('treść komunikatu');    //okienko confirm</pre>
 
-        <input type="button" id="guzik" value="Kliknij aby wykonać program ALERT" />
-        <script type="text/javascript">
-            function wypisz() {
-                alert("Okienko ALERT!");
-            }
-          document.getElementById('guzik').onclick = wypisz
-        </script>
-        <input type="button" id="guzik1" value="Kliknij aby wykonać program PROMPT" />
+    <input type="button" id="guzik" value="Kliknij aby wykonać program ALERT"/>
+    <script type="text/javascript">
+        function wypisz() {
+            alert("Okienko ALERT!");
+        }
 
-        <script type="text/javascript">
-          function wypisz() {
-              prompt("Okienko PROMPT!");
-          }
-          document.getElementById('guzik1').onclick = wypisz
-        </script>
-        <input type="button" id="guzik2" value="Kliknij aby wykonać program CONFIRM" />
-        <script type="text/javascript">
-          function wypisz() {
-              confirm("Okienko CONFIRM!");
-          }
-          document.getElementById('guzik2').onclick = wypisz
-        </script>
-    </main>
-    <footer>Damian Szefler Copyright 2014</footer>
+        document.getElementById('guzik').onclick = wypisz
+    </script>
+    <input type="button" id="guzik1" value="Kliknij aby wykonać program PROMPT"/>
 
-  </body>
+    <script type="text/javascript">
+        function wypisz() {
+            prompt("Okienko PROMPT!");
+        }
+
+        document.getElementById('guzik1').onclick = wypisz
+    </script>
+    <input type="button" id="guzik2" value="Kliknij aby wykonać program CONFIRM"/>
+    <script type="text/javascript">
+        function wypisz() {
+            confirm("Okienko CONFIRM!");
+        }
+
+        document.getElementById('guzik2').onclick = wypisz
+    </script>
+</main>
+<footer>Damian Szefler Copyright 2014</footer>
+
+</body>
 </html>

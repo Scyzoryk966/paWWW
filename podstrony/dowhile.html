@@ -1,85 +1,91 @@
 <!DOCTYPE html>
 <html lang="pl-PL">
-  <head>
-    <link rel="stylesheet" href="../css/style.css" type="text/css"/>
-    <link rel="shortcut icon" href="img/logo.png"/>
-    <meta charset="utf-8">
-    <meta http-equiv="Creation-Date" content="2019-11-03 17:38" />
-    <meta http-equiv="reply-to" content="muszas@gmail.com" />
-    <title>JavaScript</title>
-      <!--Syntax!-->
+<head>
+        <link rel="stylesheet" href="../css/style.css" type="text/css"/>
+        <link rel="shortcut icon" href="img/logo.png"/>
+        <meta charset="utf-8">
+        <meta http-equiv="Creation-Date" content="2019-11-03 17:38"/>
+        <meta http-equiv="reply-to" content="muszas@gmail.com"/>
+        <title>JavaScript</title>
+        <!--Syntax!-->
 
-  </head>
-  <body> 
-    <header>
-      <a href="../index.html"><img src="../img/logo.png"  alt=""></a>
-    </header>
-    <nav class="zaokTOP">
-      <a href="../index.html">Zadania</a>
-      <a href="../inne/index.html">Skrypty</a>           
-    </nav>
-    <main><h1 style="text-align: center;">Pętla do...while</h1>
-      <p>Podobnym rodzajem pętli jest pętla typu do ... while. Zasadniczą różnicą między tym typem a poprzednim jest to, że kod który ma być powtarzany zostanie wykonany przed sprawdzeniem wyrażenia. Ogólna postać tego typu pętli jest następująca:</p>
+</head>
+<body>
+<header>
+        <a href="../index.html"><img src="../img/logo.png" alt=""></a>
+</header>
+<nav class="zaokTOP">
+        <a href="../index.html">Zadania</a>
+        <a href="../inne/index.html">Skrypty</a>
+</nav>
+<main><h1 style="text-align: center;">Pętla do...while</h1>
+        <p>Podobnym rodzajem pętli jest pętla typu do ... while. Zasadniczą różnicą między tym typem a poprzednim jest
+                to,
+                że kod który ma być powtarzany zostanie wykonany przed sprawdzeniem wyrażenia. Ogólna postać tego typu
+                pętli
+                jest następująca:</p>
 
-<pre>do {
+        <pre>
+do {
     ...fragment kodu który będzie powtarzany...
-}
-while (wyrażenie)</pre>
-<p>Wykonamy nastepujace zadanie:<p>
+} while (wyrażenie)
+        </pre>
+        <p>Wykonamy nastepujace zadanie:
+        <p>
 
-<pre> <script. type="text/javascript">
-var x = 1;
-var haslo;
-do{
-haslo = prompt("Podaj hasło...", "...");
-if(haslo=="barbarossa"){
-document.write("Złamałeś haslo!");
-break
-}
-else{
-document.write("Złe hasło!<br>");
-x++
-continue
-}
-}
-while(x<4);
-if(x==4){
-document.write("Przekroczyles ilosc prob zalogowania");
-}
-</script.> </pre>
-<input type="button" id="guzik" value="Kliknij aby wykonać program" />
+        <pre>
+&lt;script. type="text/javascript">
+                var x = 1;
+                var haslo;
+                do {
+                        haslo = prompt("Podaj hasło...", "...");
+                        if (haslo == "barbarossa") {
+                                document.write("Złamałeś haslo!&lt;br>");
+                                break
+                        } else {
+                                document.write("złe hasło&lt;br>");
+                                x++
+                                continue
+                        }
+                }
+                while (x < 4);
+                if (x == 4) {
+                        document.write("Przekroczyles ilosc prob zalogowania&lt;br>");
+                }
+&lt;/script.>
+  </pre>
+        <input type="button" id="guzik" value="Kliknij aby wykonać program"/>
 
-<script type="text/javascript">
-    function wypisz() {
+        <script type="text/javascript">
+                function wypisz() {
 
-      var x = 1;
-var haslo;
-do{
-haslo = prompt("Podaj hasło...", "...");
-if(haslo=="barbarossa"){
-document.write("Złamałeś haslo!<br>");
-break
-}
-else{
-document.write("złe hasło<br>");
-x++
-continue
-}
-}
-while(x<4);
-if(x==4){
-document.write("Przekroczyles ilosc prob zalogowania<br>");
-}
+                        var x = 1;
+                        var haslo;
+                        do {
+                                haslo = prompt("Podaj hasło...", "...");
+                                if (haslo == "barbarossa") {
+                                        document.write("Złamałeś haslo!<br>");
+                                        break
+                                } else {
+                                        document.write("złe hasło<br>");
+                                        x++
+                                        continue
+                                }
+                        }
+                        while (x < 4);
+                        if (x == 4) {
+                                document.write("Przekroczyles ilosc prob zalogowania<br>");
+                        }
 
-        document.write("<br><form action=\"../podstrony/dowhile.html\"><input type=\"submit\" value=\"Powrót do artykulu\" /></form>");
-        document.write("<form action=\"../index.html\"><input type=\"submit\" value=\"Powrót do zadan\" /></form>");
-    }
- 
-    document.getElementById('guzik').onclick = wypisz
-</script>
+                        document.write("<br><form action=\"../podstrony/dowhile.html\"><input type=\"submit\" value=\"Powrót do artykulu\" /></form>");
+                        document.write("<form action=\"../index.html\"><input type=\"submit\" value=\"Powrót do zadan\" /></form>");
+                }
 
-    </main>
-    <footer> Damian Szefler Copyright 2019</footer>
+                document.getElementById('guzik').onclick = wypisz
+        </script>
 
-  </body>
+</main>
+<footer> Damian Szefler Copyright 2019</footer>
+
+</body>
 </html>
