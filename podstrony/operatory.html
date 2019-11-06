@@ -10,16 +10,25 @@
 		<!--Syntax!-->
 		<style>
         table {
-        border: solid;
-        padding: 5px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 30px;
+            width: 80%;
+            border: solid white;
+            padding: 5px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 30px;
         }
-        td{
-        padding: 5px;
-        tr{
-        padding: 5px;
+        td, tr, th{
+            padding: 8px;
+            border: solid white;
+        }
+        td.colspan{
+            text-align: center;
+            font-size: 1.2em;
+        }
+        tr:nh-chitld(even){background-color: black}
+        th{
+            font-size: 1.5em;
+            font-family: Tahoma, sans-serif;
         }
 		</style>
 </head>
@@ -47,7 +56,7 @@
                     <th>Przykłady</th>
                   </tr>
                   <tr>
-                    <td colspan="3">Porównania</td>
+                    <td colspan="3" class="colspan">Porównania</td>
                   </tr>
                   <tr>
                     <td>==</td>
@@ -80,7 +89,7 @@
                     <td>3&lt;=3 wynik: prawda</td>
                   </tr>
                   <tr>
-                    <td colspan="3">Przypisania</td>
+                    <td colspan="3" class="colspan">Przypisania</td>
                   </tr>
                   <tr>
                     <td>=</td>
@@ -113,7 +122,7 @@
                     <td>x=x%y</td>
                   </tr>
                   <tr>
-                    <td colspan="3">Logiczne</td>
+                    <td colspan="3" class="colspan">Logiczne</td>
                   </tr>
                   <tr>
                     <td>&amp;&amp;</td>
