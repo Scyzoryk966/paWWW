@@ -11,17 +11,18 @@
   <body> 
     <header>
       <img src="../../img/logo.png"  alt="">
-    </header> 
+    </header>
+    <main class="zaokTOP">
     <nav class="zaokTOP">
       <a href="../../index.html">Zadania</a>
       <a href="../index.html">Skrypty</a>          
     </nav>   
-    <main><h1 style="text-align: center;">Ilość formularzy</h1>
+    <h1 >Ilość formularzy</h1>
 
 <pre>&lt;script type="text/javascript">
 
 function przetwarzaj_dane (){ 
- document.forms[0].liczba.value = document.forms.length 
+    document.forms[0].liczba.value = document.forms.length
 } 
 
 &lt;/script> </pre>
@@ -35,8 +36,8 @@ function przetwarzaj_dane (){
 </script>
 
 <FORM NAME = "formularz1"> 
-Ilość formularzy w dokumencie:
-<input type = "text" name = "liczba" > 
+  <p>Ilość formularzy w dokumencie:
+<input type = "text" name = "liczba" > </p>
 </FORM> 
 <form name = "formularz2"> 
 <input type = "button" value = "Sprawdz" onClick = "przetwarzaj_dane()"> 
@@ -44,8 +45,14 @@ Ilość formularzy w dokumencie:
 <form name = "formularz3">
 </form>
 
-    </main> 
-    <footer> Damian Szefler Copyright 2019 </footer>
+    </main>
+    <aside class="bottom zaokTOP">
+      <aside class="top zaokTOP">elo</aside>
+      <p>Testy xd</p>
+    </aside>
+    <footer><p>Damian Szefler Copyright 2019</p></footer>
 
   </body>
+<div style="height: 1em;">
+</div>
 </html>

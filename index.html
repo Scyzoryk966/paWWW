@@ -7,8 +7,25 @@
     <meta http-equiv="Creation-Date" content="2019-11-03 17:38"/>
     <meta http-equiv="reply-to" content="muszas@gmail.com"/>
     <title>JavaScript - Strona główna - Zadania</title>
+    <script>
+        function startTime() {
+            var today = new Date();
+            var h = today.getHours();
+            var m = today.getMinutes();
+            var s = today.getSeconds();
+            m = checkTime(m);
+            s = checkTime(s);
+            document.getElementById('zegar').innerHTML =
+                    h + ":" + m + ":" + s;
+            var t = setTimeout(startTime, 500);
+        }
+        function checkTime(i) {
+            if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+            return i;
+        }
+    </script>
 </head>
-    <body>
+    <body onload="startTime()">
     <header>
         <img src="img/logo.png" alt="">
     </header>
@@ -36,7 +53,7 @@
 
     <aside class="bottom zaokTOP">
         <aside class="top zaokTOP">elo</aside>
-        <p>Testy xd</p>
+        <div id="zegar"></div>
     </aside>
     <footer><p>Damian Szefler Copyright 2019</p></footer>
 
