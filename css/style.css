@@ -201,6 +201,11 @@ footer p {
     border-top-left-radius: 10px;
 }
 
+h1{
+    text-align: center;
+    font-size: 2em;
+}
+
 p {
     color: #fff;
     text-align: justify;
@@ -210,6 +215,7 @@ p {
 
 pre {
     background-color: #232210;
+    overflow: no-content;
     color: yellow;
     margin-left: 2%;
     margin-right: 2%;

@@ -12,18 +12,19 @@
   <body> 
     <header>
         <a href="../index.html"><img src="../img/logo.png"  alt=""></a>
-    </header> 
+    </header>
+    <main class="zaokTOP">
     <nav class="zaokTOP">
       <a href="../index.html">Zadania</a>
       <a href="../inne/index.html">Skrypty</a>          
     </nav>   
-    <main><h1 style="text-align: center;">Instrukcja warunkowa</h1>
+    <h1>Instrukcja warunkowa</h1>
       <p>Do stworzenia prostego skryptu wystarczy użyć kilku (lub więcej) instrukcji, które zostaną wykonane sekwencyjnie (jedna po drugiej), tak jak były zapisane. W praktyce jednak takie proste skrypty są rzadkością - zdecydowanie częściej w skrypcie trzeba wykonać (lub nie) dany fragment kodu w zależności od tego czy określony warunek będzie spełniony (lub też odwrotnie). Do tego celu właśnie służą instrukcje warunkowe, które omówię w tej części kursu.
 
 Instrukcje warunkowe służą do decydowania który fragment kodu powinien zostać wykonany w zależności od spełnienia określonych warunków; inaczej mówiąc służą do rozgałęzienia ścieżki wykonywania skryptu. Wykonamy nastepujace skrypty:</p>
 
 <pre>
-  &lt;script type="text/javascript">
+&lt;script type="text/javascript">
   var a = prompt("Podaj imie...", "...");
     if (a!=null){
         document.write("Witaj "+a+" !");
@@ -57,8 +58,7 @@ document.write("Witaj "+a+" !");
 <!--Guzik2!-->
 
 <pre>
-  &lt;script type="text/javascript">
-
+&lt;script type="text/javascript">
 	var a = prompt("Podaj A...", "...");
 	var b = prompt("Podaj B...", "...");
 	var c = prompt("Podaj C...", "...");
@@ -70,7 +70,6 @@ document.write("Witaj "+a+" !");
 			else{
 			alert("Jestes w dupie, delta jest ujemna");
 			}
-
 &lt;/script>
 </pre>
 
@@ -96,7 +95,13 @@ document.write("Witaj "+a+" !");
     document.getElementById('guzik2').onclick = wypisz
 </script>
 
-    </main> 
-    <footer> Damian Szefler Copyright 2019 </footer>
-  </body>
+    </main>
+        <aside class="bottom zaokTOP">
+                <aside class="top zaokTOP">elo</aside>
+                <p>Testy xd</p>
+            </aside>
+            <footer><p>Damian Szefler Copyright 2019</p></footer>
+            </body>
+            <div style="height: 1em;">
+            </div>
 </html>

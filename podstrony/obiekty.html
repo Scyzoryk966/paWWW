@@ -12,25 +12,27 @@
   <body> 
     <header>
         <a href="../index.html"><img src="../img/logo.png"  alt=""></a>
-    </header> 
+    </header>
+    <main class="zaokTOP">
     <nav class="zaokTOP">
       <a href="../index.html">Zadania</a>
       <a href="../inne/index.html">Skrypty</a>           
     </nav>   
-    <main><h1 style="text-align: center;">Obiekty</h1>
+    <h1>Obiekty</h1>
       <p>Pewnie słyszeliście już nazwę "programowanie obiektowe"? Jeżeli jeszcze nie programowaliście obiektowo, to nie ma się co martwić - JavaScript właściwie cała opiera się na programowaniu obiektowym ;).
 W waszych skryptach nieraz i nie dwa odwołujecie się do obiektów. Na przykład window, document, button itp. to typowe obiekty, które posiadają swoje metody i właściwości :).
 
 Oczywiście jak i inne języki, tak i Javascript umożliwia tworzenie własnych obiektów. Początkowo może się wam wydawać, ze jest to nie za bardzo użyteczne (w końcu można większość rzeczy zrobić przy pomocy funkcji itp), ale gdy zaznajomicie się z obiektami na pewno zmienicie zdanie. Przede wszystkim obiekty dają nam ochronę danych. Dziwnie brzmi prawda? Na stronie nie raz tworzyłeś button. Każdy z nich ma np. metodę onclick, właściwość value itp. Nie ma żadnego konfliktu w skrypcie, mimo tego, że obiekty te mają metody i właściwości takie same jak ich "bracia". Poza tym programowanie obiektowe jest najbardziej bliskie rzeczywistości. Zapraszam do lektury.</p>
 <p>Aby utworzyć nowy pojedynczy obiekt możemy skorzystamy z poniższej konstrukcji:</p>
-<pre>var obiekt_1 = {
+<pre>
+var obiekt_1 = {
     imie: "Marcin",
     wzrost: 184,
     wypisz : function() {
         alert(this.imie)
     }
-}</pre>
-
+}
+</pre>
 
 <p>Tworzenie obiektu za pomocą konstruktora:</p>
 
@@ -83,12 +85,13 @@ var g=prompt("Podaj nazwisko spr");
 spr=new imiee(f, g);
 
 ksiazka=new Biblioteka(a,b,c,d,e, spr);
-document.write(" <b> Dział: </b> " + ksiazka.dzial  + " <br> ");
-document.write(" <b> Tytuł: </b> " + ksiazka.tytol  + " <br> ");
-document.write(" <b> Autor: </b> " + ksiazka.autor  + " <br> ");
-document.write(" <b> Ilość: </b> " + ksiazka.ilosc  + " <br> ");
-document.write(" <b> Wydawnictwo: </b> " + ksiazka.wydawnictwo  + " <br>");
-document.write(" <b> Srzedajacy: </b> " + ksiazka.sprzedajacy.imie+" " +ksiazka.sprzedajacy.nazwisko  + " <br>  <br> ");
+document.write(" &lt;b> Dział: &lt;/b> " + ksiazka.dzial  + " &lt;br> ");
+document.write(" &lt;b> Tytuł: &lt;/b> " + ksiazka.tytol  + " &lt;br> ");
+document.write(" &lt;b> Autor: &lt;/b> " + ksiazka.autor  + " &lt;br> ");
+document.write(" &lt;b> Ilość: &lt;/b> " + ksiazka.ilosc  + " &lt;br> ");
+document.write(" &lt;b> Wydawnictwo: &lt;/b> " + ksiazka.wydawnictwo  + " &lt;br>");
+document.write(" &lt;b> Srzedajacy: &lt;/b> " + ksiazka.sprzedajacy.imie);
+document.write(" +ksiazka.sprzedajacy.nazwisko  + " &lt;br>  &lt;br> ");
 }
 &lt;/script>
 </pre>
@@ -150,7 +153,12 @@ document.write(" <b> Srzedajacy: </b> " + ksiazka.sprzedajacy.imie+" " +ksiazka.
 </script>
 
     </main> 
-    <footer> Damian Szefler Copyright 2019 </footer>
-
-  </body>
+        <aside class="bottom zaokTOP">
+                <aside class="top zaokTOP">elo</aside>
+                <p>Testy xd</p>
+            </aside>
+            <footer><p>Damian Szefler Copyright 2019</p></footer>
+            </body>
+            <div style="height: 1em;">
+            </div>
 </html>
