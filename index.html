@@ -15,12 +15,15 @@
             var s = today.getSeconds();
             m = checkTime(m);
             s = checkTime(s);
-            document.getElementById('zegar').innerHTML =
-                    h + ":" + m + ":" + s;
+            var time =
+				'<div class="tarcza zaokTOP zaokBOTTOM">'+h+'</div>:<div class="tarcza zaokTOP zaokBOTTOM">'+m+'</div>:<div class="tarcza zaokTOP zaokBOTTOM">'+s+'</div>'
+            document.getElementById('zegar').innerHTML = time;
+            // document.getElementById('M').innerHTML = m;
+            // document.getElementById('S').innerHTML = s;
             var t = setTimeout(startTime, 500);
         }
         function checkTime(i) {
-            if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+            if (i < 10) {i = "0" + i};
             return i;
         }
     </script>
@@ -53,8 +56,9 @@
 
     <aside class="bottom zaokTOP">
         <aside class="top zaokTOP">elo</aside>
-        <div id="zegar"></div>
-    </aside>
+			<div id="zegar">
+			</div>
+	</aside>
     <footer><p>Damian Szefler Copyright 2019</p></footer>
 
     </body>

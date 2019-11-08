@@ -85,7 +85,7 @@ header {
     padding: 40px;
 }
 
-header img { /*MENU1*/
+header img {
     transition: all 0.1s ease-in;
 }
 
@@ -191,14 +191,28 @@ footer p {
 #zegar{
     font-size: 3em;
     text-align: center;
-    margin-top: 4%;
-    padding: 20px;
+    margin-top: 27%;
+    margin-bottom: 12%;
+    transition: all 0.1s ease-in;
 }
+.tarcza{
+    display: inline-block;
+    background: black;
+    width: 2ch;
+    padding: 25px 20px;
+}
+
 
 .zaokTOP {
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
 }
+
+.zaokBOTTOM {
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
 
 h1{
     text-align: center;
@@ -254,7 +268,10 @@ pre {
     aside.top {
         font-size: 3em;
     }
-
+    .zegar{
+        margin-top: 7%;
+        margin-bottom: 2%;
+    }
     pre{
         font-size: 1.6em;
         line-height: 1.1em;
