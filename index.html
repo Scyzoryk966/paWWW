@@ -1,67 +1,44 @@
 <!DOCTYPE html>
 <html lang="pl-PL">
 <head>
-    <link rel="stylesheet" href="css/style.css" type="text/css"/>
-    <link rel="shortcut icon" href="img/logo.png"/>
-    <meta charset="utf-8">
-    <meta http-equiv="Creation-Date" content="2019-11-03 17:38"/>
-    <meta http-equiv="reply-to" content="muszas@gmail.com"/>
-    <title>JavaScript - Strona główna - Zadania</title>
-    <script>
-        function startTime() {
-            var today = new Date();
-            var h = today.getHours();
-            var m = today.getMinutes();
-            var s = today.getSeconds();
-            m = checkTime(m);
-            s = checkTime(s);
-            var time =
-				'<div class="tarcza zaokTOP zaokBOTTOM">'+h+'</div>:<div class="tarcza zaokTOP zaokBOTTOM">'+m+'</div>:<div class="tarcza zaokTOP zaokBOTTOM">'+s+'</div>'
-            document.getElementById('zegar').innerHTML = time;
-            // document.getElementById('M').innerHTML = m;
-            // document.getElementById('S').innerHTML = s;
-            var t = setTimeout(startTime, 500);
-        }
-        function checkTime(i) {
-            if (i < 10) {i = "0" + i};
-            return i;
-        }
-    </script>
+		<link rel="stylesheet" href="css/style.css" type="text/css"/>
+		<link rel="shortcut icon" href="img/logo.png"/>
+		<meta charset="utf-8">
+		<meta http-equiv="Creation-Date" content="2019-11-03 17:38"/>
+		<meta http-equiv="reply-to" content="muszas@gmail.com"/>
+		<title>JavaScript - Strona główna - Zadania</title>
+		<script src="js/scripts.js"></script>
 </head>
-    <body onload="startTime()">
-    <header>
-        <img src="img/logo.png" alt="">
-    </header>
-    <main class="zaokTOP">
-        <nav class="zaokTOP">
-            <a href="">Zadania</a>
-            <a href="inne/index.html">Skrypty</a>
-        </nav>
-        <ol>
-            <li><a href="podstrony/umieszczanie.html">Umieszczanie skryptu w pliku HTML.</a>
-            <li><a href="podstrony/write.html">Instrukcja document.write.</a>
-            <li><a href="podstrony/dialog.html">Okna dialogowe.</a>
-            <li><a href="podstrony/var.html">Zmienne.</a>
-            <li><a href="podstrony/operatory.html">Operatory.</a>
-            <li><a href="podstrony/if.html">Instrukcja warunkowa.</a>
-            <li><a href="podstrony/for.html">Pętla for.</a>
-            <li><a href="podstrony/while.html">Pętla while.</a>
-            <li><a href="podstrony/dowhile.html">Pętla do..while.</a>
-            <li><a href="podstrony/function.html">Funkcja</a>
-            <li><a href="podstrony/obiekty.html">Obiekty</a>
-        </ol>
-        <div style="width: 100%; height: 15px;">
-        </div>
-    </main>
-
-    <aside class="bottom zaokTOP">
-        <aside class="top zaokTOP">elo</aside>
-			<div id="zegar">
-			</div>
-	</aside>
-    <footer><p>Damian Szefler Copyright 2019</p></footer>
-
-    </body>
+		<body onload="startTime()">
+				<header>
+						<img src="img/logo.png" alt="">
+				</header>
+						<main class="zaokTOP">
+								<nav class="zaokTOP">
+									<a href="">Zadania</a>
+									<a href="inne/index.html">Skrypty</a>
+								</nav>
+								<ol>
+									<li><a href="podstrony/umieszczanie.html">Umieszczanie skryptu w pliku HTML.</a>
+									<li><a href="podstrony/write.html">Instrukcja document.write.</a>
+									<li><a href="podstrony/dialog.html">Okna dialogowe.</a>
+									<li><a href="podstrony/var.html">Zmienne.</a>
+									<li><a href="podstrony/operatory.html">Operatory.</a>
+									<li><a href="podstrony/if.html">Instrukcja warunkowa.</a>
+									<li><a href="podstrony/for.html">Pętla for.</a>
+									<li><a href="podstrony/while.html">Pętla while.</a>
+									<li><a href="podstrony/dowhile.html">Pętla do..while.</a>
+									<li><a href="podstrony/function.html">Funkcja</a>
+									<li><a href="podstrony/obiekty.html">Obiekty</a>
+								</ol>
+										<div style="width: 100%; height: 15px;"></div>
+						</main>
+						<aside class="bottom zaokTOP">
+								<aside class="top zaokTOP">Zegar</aside>
+										<div id="zegar"></div>
+						</aside>
+				<footer><p>Damian Szefler Copyright 2019</p></footer>
+		</body>
 <div style="height: 1em;">
 </div>
 </html>

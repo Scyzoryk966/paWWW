@@ -47,6 +47,14 @@ table {
     border-spacing: 0;
 }
 /* CSS RESET END */
+
+@font-face {
+    font-family: Digital;
+    src: url(../font/digital-7mono.ttf);
+}
+
+
+
 html {
     color: white;
     font-family: Tahoma, serif;
@@ -149,6 +157,7 @@ main input {
 }
 
 aside {
+    font-size: 1.3em;
     float: left;
     width: 24%;
     margin-top: 0;
@@ -157,8 +166,9 @@ aside {
 }
 
 aside.top {
-    width: 88%;
-    padding: 6%;
+    text-align: center;
+    width: 91.2%;
+    padding: 4.3%;
     background-color: #232323;
     margin-bottom: 15px;
 }
@@ -189,19 +199,47 @@ footer p {
 }
 
 #zegar{
-    font-size: 3em;
+    font-size: 2em;
+    font-family: Digital, monospace;
     text-align: center;
-    margin-top: 27%;
-    margin-bottom: 12%;
-    transition: all 0.1s ease-in;
-}
-.tarcza{
-    display: inline-block;
-    background: black;
-    width: 2ch;
-    padding: 25px 20px;
+    margin-top: 20%;
+    margin-bottom: 5%;
 }
 
+.tarcza{
+    display: inline-block;
+    background: #232323;
+    width: 2ch;
+    padding: 25px 20px;
+
+}
+.tarcza:before{
+    color: rgba(255,255,255,0.16);
+    position: absolute;
+    content: "88";
+}
+
+
+.blush{
+    color: white;
+    animation: blush 1s infinite;
+    animation-direction: normal;
+}
+
+@keyframes blush {
+    0% {
+        color: #cacaca
+    }
+    10% {
+        color:white;
+    }
+    90% {
+        color:white;
+    }
+    100% {
+        color: #cacaca;
+    }
+}
 
 .zaokTOP {
     border-top-right-radius: 10px;
@@ -238,6 +276,12 @@ pre {
     padding: 3%;
 }
 
+@media screen and (max-width: 1100px) {
+    .tarcza{
+        font-size: 0.8em;
+        padding: 15px 10px;
+    }
+}
 
 @media screen and (max-width: 1000px) {
     body{
@@ -268,9 +312,9 @@ pre {
     aside.top {
         font-size: 3em;
     }
-    .zegar{
-        margin-top: 7%;
-        margin-bottom: 2%;
+    .tarcza{
+        font-size: 2em;
+        padding: 40px 20px;
     }
     pre{
         font-size: 1.6em;
