@@ -59,6 +59,7 @@ html {
     color: white;
     font-family: Tahoma, serif;
     line-height: 1em;
+    scroll-behavior: smooth;
     background: linear-gradient(to bottom right, #fff051, #a88f0f) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -230,10 +231,10 @@ footer p {
     0% {
         color: #cacaca
     }
-    10% {
+    5% {
         color:white;
     }
-    90% {
+    95% {
         color:white;
     }
     100% {
