@@ -4,10 +4,8 @@
         <link rel="stylesheet" href="../css/style.css" type="text/css"/>
         <link rel="shortcut icon" href="../img/logo.png"/>
 		<meta charset="utf-8">
-        <meta http-equiv="Creation-Date" content="2019-11-03 17:38"/>
-        <meta http-equiv="reply-to" content="muszas@gmail.com"/>
         <title>JavaScript - Kontakt</title>
-        <script src="../js/scripts.js"></script>\
+        <script src="../js/scripts.js"></script>
 		<style>
 			main input,
 			main textarea {
@@ -63,7 +61,7 @@
 </head>
 		<body onload="startTime()">
 				<header>
-    <a href="../index.html"><img src="../img/logo.png" alt="banner"></a>
+    <a href="../index.html"><img src="../img/logo.png" alt="Banner"></a>
 				</header>
 						<main class="zaokTOP">
 								<nav class="zaokTOP">
@@ -73,29 +71,32 @@
 								</nav>
 										<h1>Kontakt</h1>
 										<form class="form">
-												<p class="nick">
-														<input type="text" name="nick" id="nick"
-																	   placeholder="Podaj swój nick">
-												<label for="nick">Nick</label>
+												<p class="imie">
+														<input type="text" name="imie" id="imie"
+																	   placeholder="Podaj swoje Imię" tabindex="1">
+												<label for="imie">Nick</label>
 												</p>
 												<p class="email">
 														<input type="email" name="emain" id="email"
-															   placeholder="twoj@email.com">
+															   placeholder="twoj@email.com" tabindex="2">
 														<label for="email">E-mail</label>
 												</p>
 												<p class="tel">
 														<input type="tel" name="tel" id="tel"
 															   pattern="[0-9]{3}[0-9]{3}[0-9]{3}"
-															   placeholder="Numer telefonu">
+															   placeholder="Numer telefonu" tabindex="3">
 														<label for="tel">Numer telefonu (FORMAT:123456789)</label>
 												</p>
 												<p class="tresc">
 														<textarea type="text" name="tresc" id="tresc"
-																  placeholder="Treść wiadomości"></textarea>
+																  placeholder="Treść wiadomości"
+																  tabindex="4"></textarea>
 														<label for="tresc"></label>
 												</p>
 												<p>
-														<span class="wyslij"><input type="submit" value="Wyślij"></span>
+														<span
+																class="wyslij"><input type="submit" value="Wyślij"
+																					  tabindex="5"></span>
 														<span class="reset"><input type="reset" value="Wyczyść" ></span>
 												</p>
 										</form>
