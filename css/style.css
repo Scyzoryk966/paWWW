@@ -28,31 +28,36 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
     display: block;
 }
+
 body {
     line-height: 1;
 }
+
 ol, ul {
     list-style: none;
 }
+
 blockquote, q {
     quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
     content: '';
     content: none;
 }
+
 table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+
 /* CSS RESET END */
 
 @font-face {
     font-family: Digital;
     src: url(../font/digital-7mono.ttf);
 }
-
 
 
 html {
@@ -119,11 +124,13 @@ nav a:link { /*MENU1*/
     transition-property: box-shadow, background-color;
     padding: 0.5em;
 }
-nav a:visited{
+
+nav a:visited {
     color: #ffffff;
 }
+
 nav a:hover {
-    background-color: #ff3242;
+    background-color: #c82e39;
     box-shadow: 5px 5px #1d1d1d;
     text-shadow: 2px 2px 3px #1d1d1d;
     font-size: 1.3em;
@@ -172,8 +179,8 @@ aside.top {
 
 aside.bottom {
     background-color: rgba(0, 0, 0, 0.5);
-    margin-top: 0;
     margin-left: 1%;
+    margin-bottom: 1%;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
 }
@@ -188,6 +195,7 @@ footer {
     width: 90%;
     margin-top: 1%;
     margin-left: 5%;
+    margin-bottom: 1%;
     border-radius: 10px;
 }
 
@@ -195,7 +203,7 @@ footer p {
     text-align: center;
 }
 
-#zegar{
+#zegar {
     font-size: 2em;
     font-family: Digital, monospace;
     text-align: center;
@@ -203,21 +211,22 @@ footer p {
     margin-bottom: 5%;
 }
 
-.tarcza{
+.tarcza {
     display: inline-block;
     background: #232323;
     width: 2ch;
     padding: 25px 20px;
 
 }
-.tarcza:before{
-    color: rgba(255,255,255,0.16);
+
+.tarcza:before {
+    color: rgba(255, 255, 255, 0.16);
     position: absolute;
     content: "88";
 }
 
 
-.blush{
+.blush {
     color: white;
     animation: blush 1s infinite;
     animation-direction: normal;
@@ -228,10 +237,10 @@ footer p {
         color: #cacaca
     }
     5% {
-        color:white;
+        color: white;
     }
     95% {
-        color:white;
+        color: white;
     }
     100% {
         color: #cacaca;
@@ -249,10 +258,11 @@ footer p {
 }
 
 
-h1{
+h1 {
+    font-family: "Times New Roman";
     text-align: center;
     font-size: 2em;
-    padding:30px;
+    padding: 30px;
 }
 
 p {
@@ -274,19 +284,21 @@ pre {
 }
 
 @media screen and (max-width: 1100px) {
-    .tarcza{
+    .tarcza {
         font-size: 0.8em;
         padding: 15px 10px;
     }
 }
 
 @media screen and (max-width: 1000px) {
-    body{
+    body {
         line-height: 1.2em;
     }
+
     header img {
         max-height: 200px;
     }
+
     nav {
         float: none;
         width: 96%;
@@ -307,13 +319,17 @@ pre {
     }
 
     aside.top {
-        font-size: 3em;
+        width: 96%;
+        font-size: 2em;
+        padding: 15px;
     }
-    .tarcza{
+
+    .tarcza {
         font-size: 2em;
         padding: 40px 20px;
     }
-    pre{
+
+    pre {
         font-size: 1.6em;
         line-height: 1.1em;
     }

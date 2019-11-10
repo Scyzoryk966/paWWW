@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+        <link rel="stylesheet" href="../css/style.css" type="text/css"/>
+        <link rel="shortcut icon" href="../img/logo.png"/>
+		<meta charset="utf-8">
+        <meta http-equiv="Creation-Date" content="2019-11-03 17:38"/>
+        <meta http-equiv="reply-to" content="muszas@gmail.com"/>
+        <title>JavaScript - Kontakt</title>
+        <script src="../js/scripts.js"></script>\
+		<style>
+			main input,
+			main textarea {
+					font-family: Tahoma,serif;
+					margin: 5px 10px 7px 5%;
+					padding: 9px;
+					border: 3px solid #ac9237;
+					box-shadow: 4px 4px 10px 3px black;
+					width: 40%;
+					color: #414141;
+					transition: all 0.2s ease-in;
+					border-radius: 3px;
+			}
+			main textarea{
+					width: 80%;
+					height: 300px;
+					line-height: 18px;
+					max-width: 87%;
+			}
+			main input:hover,
+			main textarea:hover,
+			main input:focus,
+			main textarea:focus{
+				border: 3px solid #c82e39;
+			}
+			.wyslij input{
+					display: inline-block;
+					 font-family: Tahoma, sans-serif;
+					 width: 100px;
+					 color: white;
+					 background-color: #ac9237;
+					 margin-bottom: 2%;
+			 }
+			.reset input{
+					display: inline-block;
+					float:right;
+					margin-right: 10%;
+					font-family: Tahoma, sans-serif;
+					width: 100px;
+					margin-bottom: 2%;
+					background-color: #c82e39;
+					border-color: #c82e39;
+					color: #1a190d;
+			}
+			.reset input:hover{
+					border: 3px solid #ac9237;
+			}
+			main p{
+					margin:0;
+					padding:0;
+			}
+		</style>
+</head>
+		<body onload="startTime()">
+				<header>
+    <a href="../index.html"><img src="../img/logo.png" alt="banner"></a>
+				</header>
+						<main class="zaokTOP">
+								<nav class="zaokTOP">
+										<a href="../index.html">Zadania</a>
+										<a href="../inne/index.html">Skrypty</a>
+										<a href="#">Kontakt</a>
+								</nav>
+										<h1>Kontakt</h1>
+										<form class="form">
+												<p class="nick">
+														<input type="text" name="nick" id="nick"
+																	   placeholder="Podaj swój nick">
+												<label for="nick">Nick</label>
+												</p>
+												<p class="email">
+														<input type="email" name="emain" id="email"
+															   placeholder="twoj@email.com">
+														<label for="email">E-mail</label>
+												</p>
+												<p class="tel">
+														<input type="tel" name="tel" id="tel"
+															   pattern="[0-9]{3}[0-9]{3}[0-9]{3}"
+															   placeholder="Numer telefonu">
+														<label for="tel">Numer telefonu (FORMAT:123456789)</label>
+												</p>
+												<p class="tresc">
+														<textarea type="text" name="tresc" id="tresc"
+																  placeholder="Treść wiadomości"></textarea>
+														<label for="tresc"></label>
+												</p>
+												<p>
+														<span class="wyslij"><input type="submit" value="Wyślij"></span>
+														<span class="reset"><input type="reset" value="Wyczyść" ></span>
+												</p>
+										</form>
+										<div style="width: 100%; height: 15px;"></div>
+						</main>
+						<aside class="bottom zaokTOP">
+								<aside class="top zaokTOP">Zegar</aside>
+										<div id="zegar"></div>
+						</aside>
+						<aside class="bottom zaokTOP">
+								<aside class="top zaokTOP">Mapa</aside>
+								<p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2357.396137570968!2d20.4698866!3d53.7824367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e27edae9a1bacf%3A0x97eef5767fcf63ad!2sAlpo!5e0!3m2!1spl!2spl!4v1573405439245!5m2!1spl!2spl" width="100%" height="300px" frameborder="0" style="border:0;" allowfullscreen=""></iframe></p>
+						</aside>
+				<footer><p>Damian Szefler Copyright 2019</p></footer>
+		</body>
+</html>
