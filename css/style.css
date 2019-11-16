@@ -56,6 +56,7 @@ table {
 
 @font-face {
     font-family: Digital;
+    font-display: auto;
     src: url(../font/digital-7mono.ttf);
 }
 
@@ -63,6 +64,7 @@ table {
 html {
     color: white;
     font-family: Tahoma, serif;
+    font-min-size: 12px;
     line-height: 1em;
     background: linear-gradient(to bottom right, #fff051, #a88f0f) no-repeat center center fixed;
     background-size: cover;
@@ -89,9 +91,11 @@ a:hover {
     text-decoration: underline;
     color: #ae952a;
 }
-#breadcrumb{
+
+#breadcrumb {
 
 }
+
 header {
     text-align: center;
     padding: 40px;
@@ -211,6 +215,7 @@ footer p {
     position: relative;
     text-align: center;
 }
+
 footer img {
     display: inline-block;
     float: right;
@@ -219,6 +224,7 @@ footer img {
     width: 30px;
     height: 30px;
 }
+
 #zegar {
     font-size: 2em;
     font-family: Digital, monospace;
@@ -341,10 +347,12 @@ pre {
         font-size: 2em;
         padding: 15px;
     }
+
     #zegar {
-        margin-top:5%;
-        margin-bottom:1%;
+        margin-top: 5%;
+        margin-bottom: 1%;
     }
+
     .tarcza {
         font-size: 2em;
         padding: 40px 20px;
@@ -367,8 +375,9 @@ pre {
         text-align: center;
         padding: 15px;
     }
+
     @media screen and (max-width: 400px) {
-        nav{
+        nav {
             line-height: 50px;
         }
     }

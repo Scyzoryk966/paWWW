@@ -1,30 +1,36 @@
 <!DOCTYPE html>
 <html lang="pl-PL">
-  <head>
-    <link rel="stylesheet" href="../css/style.css" type="text/css"/>
-    <link rel="shortcut icon" href="../img/logo.png"/>
-    <meta charset="utf-8">
+<head>
+		<link rel="stylesheet" href="../css/style.css" type="text/css"/>
+		<link rel="shortcut icon" href="../img/logo.png"/>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="Description" content="Strona z podstawami JavaScript zrobiona na zaliczenie.">
 
-        <title>JavaScript - Okna Funkcje</title>
-        <script src="../js/scripts.js"></script>
-  </head>
+		<title>JavaScript - Okna Funkcje</title>
+		<script src="../js/scripts.js"></script>
+</head>
 <body onload="startTime()">
-    <header>
-        <a href="../index.html"><img src="../img/logo.svg" alt="JavaScript - wróć do strony głównej" onerror="this.onerror=null;this.src='img/logo.png'"></a>
-    </header>
-    <main class="zaokTOP">
-        <nav class="zaokTOP">
-                <a href="../index.html">Zadania</a>
-                <a href="../inne/index.html">Skrypty</a>
-                <a href="kontakt.html">Kontakt</a>
-                <a href="../podstrony/dodatki.html">Dodatki</a>
-        </nav>
-         <h1>Funkcja</h1>
-      <p>Gdy mąż słyszy od żony idź do sklepu, kup ziemniaki, wówczas zaczyna wykonywać pewien zbiór czynności. Za każdym razem, gdy usłyszy idź do sklepu, kup ziemniaki, wykona ten sam zbiór czynności (heh - do czasu...). W javascript takie czynności ujęte w grupę to właśnie funkcje.
+<header>
+		<a href="../index.html"><img src="../img/logo.svg" alt="JavaScript - wróć do strony głównej"
+									 onerror="this.onerror=null;this.src='img/logo.png'"></a>
+</header>
+<main class="zaokTOP">
+		<nav class="zaokTOP">
+				<a href="../index.html">Zadania</a>
+				<a href="../inne/index.html">Skrypty</a>
+				<a href="kontakt.html">Kontakt</a>
+				<a href="../podstrony/dodatki.html">Dodatki</a>
+		</nav>
+		<h1>Funkcja</h1>
+		<p>Gdy mąż słyszy od żony idź do sklepu, kup ziemniaki, wówczas zaczyna wykonywać pewien zbiór czynności. Za
+				każdym razem, gdy usłyszy idź do sklepu, kup ziemniaki, wykona ten sam zbiór czynności (heh - do
+				czasu...). W javascript takie czynności ujęte w grupę to właśnie funkcje.
 
-Funkcja jest wywoływana przez inną część skryptu (w realnym życiu przez żonę), a w momencie jej wywołania zostaje wykonywany kod w niej zawarty. Ogólny wygląd funkcji ma następującą postać:</p>
+				Funkcja jest wywoływana przez inną część skryptu (w realnym życiu przez żonę), a w momencie jej
+				wywołania zostaje wykonywany kod w niej zawarty. Ogólny wygląd funkcji ma następującą postać:</p>
 
-<pre>
+		<pre>
 function nazwa_funkcji() {
     ...kod funkcji
 }
@@ -33,9 +39,9 @@ nazwa_funkcji = function() {
     ...kod funkcji anonimowej
 }
 </pre>
-<p>Wykonamy nastepujace zadanie:</p>
+		<p>Wykonamy nastepujace zadanie:</p>
 
-<pre>
+		<pre>
 &lt;script type="text/javascript">
     function pisz() {
         alert("To jest tekst zawarty w funkcji.");
@@ -45,38 +51,38 @@ nazwa_funkcji = function() {
     }
 &lt;/script>
 </pre>
-      <input type="button" id="guzik" value="Kliknij aby wykonać program" />
-      <script type="text/javascript">
-          function wypisz() {
+		<input type="button" id="guzik" value="Kliknij aby wykonać program"/>
+		<script type="text/javascript">
+            function wypisz() {
 
-          alert("To jest tekst zawarty w funkcji.");
+                alert("To jest tekst zawarty w funkcji.");
 
-          }
+            }
 
-          document.getElementById('guzik').onclick = wypisz
-      </script>
-    </main>
-    <aside class="bottom zaokTOP">
-            <aside id="breadcrumb" class="top zaokTOP">Tu jesteś:</aside>
-            <p>
-               <span> &raquo; </span>
-               <a href="../index.html">Strona główna</a>
-               <span> &raquo; </span>
-               <a href="#">Funkcje</a>
-           </p>
-           </aside>
-    <aside class="bottom zaokTOP">
-								<aside class="top zaokTOP">Zegar</aside>
-										<div id="zegar"></div>
-             </aside>
-             				<footer><p>Damian Szefler Copyright 2019</p>
-							<a href="https://www.facebook.com/"><img src="../img/fb.png" alt="Facebook"/></a>
-						<a href="https://www.youtube.com/"><img src="../img/yt.png"alt="YouTube"/></a>
-						<a href="https://www.twitter.com/"><img src="../img/tw.png" alt="Twitter"/></a>
-						<a href="https://www.github.com/scyzoryk966"><img src="../img/github.png" alt="Mój Github"
-																		  style="filter: invert(100%)"/></a>
-				</footer>
-             </body>
+            document.getElementById('guzik').onclick = wypisz
+		</script>
+</main>
+<aside class="bottom zaokTOP">
+		<aside id="breadcrumb" class="top zaokTOP">Tu jesteś:</aside>
+		<p>
+				<span> &raquo; </span>
+				<a href="../index.html">Strona główna</a>
+				<span> &raquo; </span>
+				<a href="#">Funkcje</a>
+		</p>
+</aside>
+<aside class="bottom zaokTOP">
+		<aside class="top zaokTOP">Zegar</aside>
+		<div id="zegar"></div>
+</aside>
+<footer><p>Damian Szefler Copyright 2019</p>
+		<a href="https://www.facebook.com/"><img src="../img/fb.png" alt="Facebook"/></a>
+		<a href="https://www.youtube.com/"><img src="../img/yt.png" alt="YouTube"/></a>
+		<a href="https://www.twitter.com/"><img src="../img/tw.png" alt="Twitter"/></a>
+		<a href="https://www.github.com/scyzoryk966"><img src="../img/github.png" alt="Mój Github"
+														  style="filter: invert(100%)"/></a>
+</footer>
+</body>
 <div style="height: 1em;">
 </div>
 </html>

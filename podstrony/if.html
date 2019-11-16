@@ -1,29 +1,38 @@
 <!DOCTYPE html>
 <html lang="pl-PL">
-  <head>
-    <link rel="stylesheet" href="../css/style.css" type="text/css"/>
-    <link rel="shortcut icon" href="../img/logo.png"/>
-    <meta charset="utf-8">
-        <title>JavaScript - Funkcja warunkowa</title>
-        <script src="../js/scripts.js"></script>
-  </head>
+<head>
+		<link rel="stylesheet" href="../css/style.css" type="text/css"/>
+		<link rel="shortcut icon" href="../img/logo.png"/>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="Description" content="Strona z podstawami JavaScript zrobiona na zaliczenie.">
+		<title>JavaScript - Funkcja warunkowa</title>
+		<script src="../js/scripts.js"></script>
+</head>
 <body onload="startTime()">
-    <header>
-        <a href="../index.html"><img src="../img/logo.svg" alt="JavaScript - wróć do strony głównej" onerror="this.onerror=null;this.src='img/logo.png'"></a>
-    </header>
-    <main class="zaokTOP">
-    <nav class="zaokTOP">
-		<a href="../index.html">Zadania</a>
-		<a href="../inne/index.html">Skrypty</a>
-		<a href="kontakt.html">Kontakt</a>
-		<a href="../podstrony/dodatki.html">Dodatki</a>
-    </nav>
-    <h1>Instrukcja warunkowa</h1>
-      <p>Do stworzenia prostego skryptu wystarczy użyć kilku (lub więcej) instrukcji, które zostaną wykonane sekwencyjnie (jedna po drugiej), tak jak były zapisane. W praktyce jednak takie proste skrypty są rzadkością - zdecydowanie częściej w skrypcie trzeba wykonać (lub nie) dany fragment kodu w zależności od tego czy określony warunek będzie spełniony (lub też odwrotnie). Do tego celu właśnie służą instrukcje warunkowe, które omówię w tej części kursu.
+<header>
+		<a href="../index.html"><img src="../img/logo.svg" alt="JavaScript - wróć do strony głównej"
+									 onerror="this.onerror=null;this.src='img/logo.png'"></a>
+</header>
+<main class="zaokTOP">
+		<nav class="zaokTOP">
+				<a href="../index.html">Zadania</a>
+				<a href="../inne/index.html">Skrypty</a>
+				<a href="kontakt.html">Kontakt</a>
+				<a href="../podstrony/dodatki.html">Dodatki</a>
+		</nav>
+		<h1>Instrukcja warunkowa</h1>
+		<p>Do stworzenia prostego skryptu wystarczy użyć kilku (lub więcej) instrukcji, które zostaną wykonane
+				sekwencyjnie (jedna po drugiej), tak jak były zapisane. W praktyce jednak takie proste skrypty są
+				rzadkością - zdecydowanie częściej w skrypcie trzeba wykonać (lub nie) dany fragment kodu w zależności
+				od tego czy określony warunek będzie spełniony (lub też odwrotnie). Do tego celu właśnie służą
+				instrukcje warunkowe, które omówię w tej części kursu.
 
-Instrukcje warunkowe służą do decydowania który fragment kodu powinien zostać wykonany w zależności od spełnienia określonych warunków; inaczej mówiąc służą do rozgałęzienia ścieżki wykonywania skryptu. Wykonamy nastepujace skrypty:</p>
+				Instrukcje warunkowe służą do decydowania który fragment kodu powinien zostać wykonany w zależności od
+				spełnienia określonych warunków; inaczej mówiąc służą do rozgałęzienia ścieżki wykonywania skryptu.
+				Wykonamy nastepujace skrypty:</p>
 
-<pre>
+		<pre>
 &lt;script type="text/javascript">
   var a = prompt("Podaj imie...", "...");
     if (a!=null){
@@ -35,29 +44,28 @@ Instrukcje warunkowe służą do decydowania który fragment kodu powinien zosta
 &lt;/script>
 </pre>
 
-<input type="button" id="guzik" value="Kliknij aby wykonać program" />
+		<input type="button" id="guzik" value="Kliknij aby wykonać program"/>
 
-<script type="text/javascript">
-    function wypisz() {
-var a = prompt("Podaj imie...");
-if (a==null){
+		<script type="text/javascript">
+            function wypisz() {
+                var a = prompt("Podaj imie...");
+                if (a == null) {
 
-document.write("Nie podałeś imienia!");
-}
-else {
-document.write("Witaj "+a+" !");
-}
+                    document.write("Nie podałeś imienia!");
+                } else {
+                    document.write("Witaj " + a + " !");
+                }
 
 
-        document.write("<br><form action=\"../podstrony/if.html\"><input type=\"submit\" value=\"Powrót do artykulu\" /></form>");
-        document.write("<form action=\"../index.html\"><input type=\"submit\" value=\"Powrót do zadan\" /></form>");
-    }
- 
-    document.getElementById('guzik').onclick = wypisz
-</script>
-<!--Guzik2!-->
+                document.write("<br><form action=\"../podstrony/if.html\"><input type=\"submit\" value=\"Powrót do artykulu\" /></form>");
+                document.write("<form action=\"../index.html\"><input type=\"submit\" value=\"Powrót do zadan\" /></form>");
+            }
 
-<pre>
+            document.getElementById('guzik').onclick = wypisz
+		</script>
+		<!--Guzik2!-->
+
+		<pre>
 &lt;script type="text/javascript">
 	var a = prompt("Podaj A...", "...");
 	var b = prompt("Podaj B...", "...");
@@ -73,50 +81,49 @@ document.write("Witaj "+a+" !");
 &lt;/script>
 </pre>
 
-<input type="button" id="guzik2" value="Kliknij aby wykonać program" />
+		<input type="button" id="guzik2" value="Kliknij aby wykonać program"/>
 
-<script type="text/javascript">
-    function wypisz() {
+		<script type="text/javascript">
+            function wypisz() {
 
-	var a = prompt("Podaj A...", "...");
-	var b = prompt("Podaj B...", "...");
-	var c = prompt("Podaj C...", "...");
-	var delta;
-		delta = (b * b) - 4 * a * c;
-			if(delta>0){
-			alert("Wynik to: " +delta);
-			}
-			else{
-			alert("Jestes w dupie, delta jest ujemna");
-			}
+                var a = prompt("Podaj A...", "...");
+                var b = prompt("Podaj B...", "...");
+                var c = prompt("Podaj C...", "...");
+                var delta;
+                delta = (b * b) - 4 * a * c;
+                if (delta > 0) {
+                    alert("Wynik to: " + delta);
+                } else {
+                    alert("Jestes w dupie, delta jest ujemna");
+                }
 
-    }
- 
-    document.getElementById('guzik2').onclick = wypisz
-</script>
+            }
 
-    </main>
-    <aside class="bottom zaokTOP">
-            <aside id="breadcrumb" class="top zaokTOP">Tu jesteś:</aside>
-            <p>
-               <span> &raquo; </span>
-               <a href="../index.html">Strona główna</a>
-               <span> &raquo; </span>
-               <a href="#">Instrukcja warunkowa</a>
-           </p>
-           </aside>
-        <aside class="bottom zaokTOP">
-								<aside class="top zaokTOP">Zegar</aside>
-										<div id="zegar"></div>
-            </aside>
-            				<footer><p>Damian Szefler Copyright 2019</p>
-							<a href="https://www.facebook.com/"><img src="../img/fb.png" alt="Facebook"/></a>
-						<a href="https://www.youtube.com/"><img src="../img/yt.png"alt="YouTube"/></a>
-						<a href="https://www.twitter.com/"><img src="../img/tw.png" alt="Twitter"/></a>
-						<a href="https://www.github.com/scyzoryk966"><img src="../img/github.png" alt="Mój Github"
-																		  style="filter: invert(100%)"/></a>
-				</footer>
-            </body>
-            <div style="height: 1em;">
-            </div>
+            document.getElementById('guzik2').onclick = wypisz
+		</script>
+
+</main>
+<aside class="bottom zaokTOP">
+		<aside id="breadcrumb" class="top zaokTOP">Tu jesteś:</aside>
+		<p>
+				<span> &raquo; </span>
+				<a href="../index.html">Strona główna</a>
+				<span> &raquo; </span>
+				<a href="#">Instrukcja warunkowa</a>
+		</p>
+</aside>
+<aside class="bottom zaokTOP">
+		<aside class="top zaokTOP">Zegar</aside>
+		<div id="zegar"></div>
+</aside>
+<footer><p>Damian Szefler Copyright 2019</p>
+		<a href="https://www.facebook.com/"><img src="../img/fb.png" alt="Facebook"/></a>
+		<a href="https://www.youtube.com/"><img src="../img/yt.png" alt="YouTube"/></a>
+		<a href="https://www.twitter.com/"><img src="../img/tw.png" alt="Twitter"/></a>
+		<a href="https://www.github.com/scyzoryk966"><img src="../img/github.png" alt="Mój Github"
+														  style="filter: invert(100%)"/></a>
+</footer>
+</body>
+<div style="height: 1em;">
+</div>
 </html>

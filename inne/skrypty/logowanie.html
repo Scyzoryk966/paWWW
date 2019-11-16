@@ -1,26 +1,31 @@
 <!DOCTYPE html>
 <html lang="pl-PL">
 <head>
-    <link rel="stylesheet" href="../../css/style.css" type="text/css"/>
-    <link rel="shortcut icon" href="../../img/logo.png"/>
-    <meta charset="utf-8">
+		<link rel="stylesheet" href="../../css/style.css" type="text/css"/>
+		<link rel="shortcut icon" href="../../img/logo.png"/>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="Description" content="Strona z podstawami JavaScript zrobiona na zaliczenie.">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="Description" content="Strona z podstawami JavaScript zrobiona na zaliczenie.">
 
-    <title>JavaScript</title>
-	  <script src="../../js/scripts.js"></script>
-  </head>
-		<body onload="startTime()">
-    <header>
-      <a href="../../index.html"><img src="../../img/logo.svg" alt="JavaScript - wróć do strony głównej" onerror="this.onerror=null;this.src='img/logo.png'"></a>
-    </header>
-	<main class="zaokTOP">
-    <nav class="zaokTOP">
-      <a href="../../index.html">Zadania</a>
-      <a href="../index.html">Skrypty</a>
-      <a href="../../podstrony/kontakt.html">Kontakt</a>
-    </nav>   
-    <h1>Logowanie</h1>
+		<title>JavaScript</title>
+		<script src="../../js/scripts.js"></script>
+</head>
+<body onload="startTime()">
+<header>
+		<a href="../../index.html"><img src="../../img/logo.svg" alt="JavaScript - wróć do strony głównej"
+										onerror="this.onerror=null;this.src='img/logo.png'"></a>
+</header>
+<main class="zaokTOP">
+		<nav class="zaokTOP">
+				<a href="../../index.html">Zadania</a>
+				<a href="../index.html">Skrypty</a>
+				<a href="../../podstrony/kontakt.html">Kontakt</a>
+		</nav>
+		<h1>Logowanie</h1>
 
-<pre>&lt;script language="JavaScript">
+		<pre>&lt;script language="JavaScript">
 	&lt;script type="text/javascript">
 		function logowanie(formularz){
 		if(formularz.login.value=="" || formularz.pass.value=="")
@@ -37,48 +42,48 @@
 	&lt;input type="reset">
 	&lt;/form></pre>
 
-	<script type="text/javascript">
-		function logowanie(formularz){
-		if(formularz.login.value==="" || formularz.pass.value==="")
-		alert("Najpierw wypełnij oba pola");
-		
-		else
-		window.location.replace("http://www.google.com/");
-		}
-	</script>
-<form name="formularz1">
-	<p>Login: <input type="text" name="login"><br>
-	Hasło: <input type="password" name="pass"><br>
-	<input type="button" value="Login" onClick="logowanie(this.form)">
-	<input type="reset"></p>
-	</form>
+		<script type="text/javascript">
+            function logowanie(formularz) {
+                if (formularz.login.value === "" || formularz.pass.value === "")
+                    alert("Najpierw wypełnij oba pola");
 
-    </main>
-        <aside class="bottom zaokTOP">
-                <aside id="breadcrumb" class="top zaokTOP">Tu jesteś:</aside>
-                <p>
-                   <span> &raquo; </span>
-                   <a href="../../index.html">Strona główna</a>
-                   <span> &raquo; </span>
-                   <a href="../index.html">Skrypty</a>
-                   <span> &raquo; </span>
-                   <a href="#">Logowanie</a>
-               </p>
-        </aside>
-	<aside class="bottom zaokTOP">
-								<aside class="top zaokTOP">Zegar</aside>
-										<div id="zegar"></div>
-	</aside>
-									<footer><p>Damian Szefler Copyright 2019</p>
-										<footer><p>Damian Szefler Copyright 2019</p>
-							<a href="https://www.facebook.com/"><img src="../../img/fb.png" alt="Facebook"/></a>
-						<a href="https://www.youtube.com/"><img src="../../img/yt.png"alt="YouTube"/></a>
-						<a href="https://www.twitter.com/"><img src="../../img/tw.png" alt="Twitter"/></a>
-						<a href="https://www.github.com/scyzoryk966"><img src="../../img/github.png" alt="Mój Github"
-																		  style="filter: invert(100%)"/></a>
-				</footer>
+                else
+                    window.location.replace("http://www.google.com/");
+            }
+		</script>
+		<form name="formularz1">
+				<p>Login: <input type="text" name="login"><br>
+						Hasło: <input type="password" name="pass"><br>
+						<input type="button" value="Login" onClick="logowanie(this.form)">
+						<input type="reset"></p>
+		</form>
 
-  </body>
+</main>
+<aside class="bottom zaokTOP">
+		<aside id="breadcrumb" class="top zaokTOP">Tu jesteś:</aside>
+		<p>
+				<span> &raquo; </span>
+				<a href="../../index.html">Strona główna</a>
+				<span> &raquo; </span>
+				<a href="../index.html">Skrypty</a>
+				<span> &raquo; </span>
+				<a href="#">Logowanie</a>
+		</p>
+</aside>
+<aside class="bottom zaokTOP">
+		<aside class="top zaokTOP">Zegar</aside>
+		<div id="zegar"></div>
+</aside>
+<footer><p>Damian Szefler Copyright 2019</p>
+		<footer><p>Damian Szefler Copyright 2019</p>
+				<a href="https://www.facebook.com/"><img src="../../img/fb.png" alt="Facebook"/></a>
+				<a href="https://www.youtube.com/"><img src="../../img/yt.png" alt="YouTube"/></a>
+				<a href="https://www.twitter.com/"><img src="../../img/tw.png" alt="Twitter"/></a>
+				<a href="https://www.github.com/scyzoryk966"><img src="../../img/github.png" alt="Mój Github"
+																  style="filter: invert(100%)"/></a>
+		</footer>
+
+</body>
 <div style="height: 1em;">
 </div>
 </html>

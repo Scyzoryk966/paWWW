@@ -1,27 +1,32 @@
 <!DOCTYPE html>
 <html lang="pl-PL">
 <head>
-  <link rel="stylesheet" href="../../css/style.css" type="text/css"/>
-  <link rel="shortcut icon" href="../../img/logo.png"/>
-  <meta charset="utf-8">
-  <meta http-equiv="Creation-Date" content="2019-11-03 17:38" />
-  <meta http-equiv="reply-to" content="muszas@gmail.com" />
-  <title>JavaScript - Silnia</title>
-	  <script src="../../js/scripts.js"></script>
-  </head>
-		<body onload="startTime()">
-    <header>
-      <a href="../../index.html"><img src="../../img/logo.svg" alt="JavaScript - wróć do strony głównej" onerror="this.onerror=null;this.src='img/logo.png'"></a>
-    </header>
-    <main class="zaokTOP">
-    <nav class="zaokTOP">
-      <a href="../../index.html">Zadania</a>
-      <a href="../index.html">Skrypty</a>
-      <a href="../../podstrony/kontakt.html">Kontakt</a>
-    </nav>   
-    <h1 style="text-align: center;">Silnia</h1>
+		<link rel="stylesheet" href="../../css/style.css" type="text/css"/>
+		<link rel="shortcut icon" href="../../img/logo.png"/>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="Description" content="Strona z podstawami JavaScript zrobiona na zaliczenie.">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="Description" content="Strona z podstawami JavaScript zrobiona na zaliczenie.">
+		<meta http-equiv="Creation-Date" content="2019-11-03 17:38"/>
+		<meta http-equiv="reply-to" content="muszas@gmail.com"/>
+		<title>JavaScript - Silnia</title>
+		<script src="../../js/scripts.js"></script>
+</head>
+<body onload="startTime()">
+<header>
+		<a href="../../index.html"><img src="../../img/logo.svg" alt="JavaScript - wróć do strony głównej"
+										onerror="this.onerror=null;this.src='img/logo.png'"></a>
+</header>
+<main class="zaokTOP">
+		<nav class="zaokTOP">
+				<a href="../../index.html">Zadania</a>
+				<a href="../index.html">Skrypty</a>
+				<a href="../../podstrony/kontakt.html">Kontakt</a>
+		</nav>
+		<h1 style="text-align: center;">Silnia</h1>
 
-<pre>&lt;script language="JavaScript">
+		<pre>&lt;script language="JavaScript">
 var x = prompt ("Podaj liczbę której silnie chcesz obliczyć");
 var s = 1;
 for (i=1;i<=x;i++)
@@ -32,50 +37,49 @@ for (i=1;i<=x;i++)
 	
 &lt;/script></pre>
 
-<input type="button" id="guzik" value="Kliknij aby wykonać program" />
+		<input type="button" id="guzik" value="Kliknij aby wykonać program"/>
 
-<script type="text/javascript">
-    function wypisz() {
+		<script type="text/javascript">
+            function wypisz() {
 
-var x = prompt ("Podaj liczbę której silnie chcesz obliczyć");
-var s = 1;
-for (i=1;i<=x;i++)
-{
-	s*=i;
-	}
-	 alert(x + "!=" + s)
-	
-    }
- 
-    document.getElementById('guzik').onclick = wypisz
-</script>
+                var x = prompt("Podaj liczbę której silnie chcesz obliczyć");
+                var s = 1;
+                for (i = 1; i <= x; i++) {
+                    s *= i;
+                }
+                alert(x + "!=" + s)
 
-    </main>
-        <aside class="bottom zaokTOP">
-                <aside id="breadcrumb" class="top zaokTOP">Tu jesteś:</aside>
-                <p>
-                   <span> &raquo; </span>
-                   <a href="../../index.html">Strona główna</a>
-                   <span> &raquo; </span>
-                   <a href="../index.html">Skrypty</a>
-                   <span> &raquo; </span>
-                   <a href="#">Silnia</a>
-               </p>
-        </aside>
-    <aside class="bottom zaokTOP">
-								<aside class="top zaokTOP">Zegar</aside>
-										<div id="zegar"></div>
-    </aside>
-    								<footer><p>Damian Szefler Copyright 2019</p>
-										<footer><p>Damian Szefler Copyright 2019</p>
-							<a href="https://www.facebook.com/"><img src="../../img/fb.png" alt="Facebook"/></a>
-						<a href="https://www.youtube.com/"><img src="../../img/yt.png"alt="YouTube"/></a>
-						<a href="https://www.twitter.com/"><img src="../../img/tw.png" alt="Twitter"/></a>
-						<a href="https://www.github.com/scyzoryk966"><img src="../../img/github.png" alt="Mój Github"
-																		  style="filter: invert(100%)"/></a>
-				</footer>
+            }
 
-  </body>
+            document.getElementById('guzik').onclick = wypisz
+		</script>
+
+</main>
+<aside class="bottom zaokTOP">
+		<aside id="breadcrumb" class="top zaokTOP">Tu jesteś:</aside>
+		<p>
+				<span> &raquo; </span>
+				<a href="../../index.html">Strona główna</a>
+				<span> &raquo; </span>
+				<a href="../index.html">Skrypty</a>
+				<span> &raquo; </span>
+				<a href="#">Silnia</a>
+		</p>
+</aside>
+<aside class="bottom zaokTOP">
+		<aside class="top zaokTOP">Zegar</aside>
+		<div id="zegar"></div>
+</aside>
+<footer><p>Damian Szefler Copyright 2019</p>
+		<footer><p>Damian Szefler Copyright 2019</p>
+				<a href="https://www.facebook.com/"><img src="../../img/fb.png" alt="Facebook"/></a>
+				<a href="https://www.youtube.com/"><img src="../../img/yt.png" alt="YouTube"/></a>
+				<a href="https://www.twitter.com/"><img src="../../img/tw.png" alt="Twitter"/></a>
+				<a href="https://www.github.com/scyzoryk966"><img src="../../img/github.png" alt="Mój Github"
+																  style="filter: invert(100%)"/></a>
+		</footer>
+
+</body>
 <div style="height: 1em;">
 </div>
 </html>
