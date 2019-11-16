@@ -58,45 +58,75 @@
 					padding:0;
 			}
 		</style>
+		<script type="text/javascript">
+            function walidacjaemail(email)
+            {
+                if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(form.email.value))
+                {
+                    return true
+                }
+                alert("Podałeś nieprawidłowy adres email");
+                return false
+            }
+            function numertel(input)
+            {
+                var tel =/^(?:\(?\+?48)?(?:[-\.\(\)\s]*(\d)){9}\)?$/;
+                if(input.value.match(tel))
+                {
+                    return true
+                }
+                else
+                {
+                    alert("Wprowadziłeś nieprawidłowy numer telefonu");
+                    return false
+                }
+            }
+			function walidacja(email, tel, txt)
+            {
+                walidacjaemail(email);
+                numertel(tel);
+            }
+		</script>
 </head>
 		<body onload="startTime()">
 				<header>
-    <a href="../index.html"><img src="../img/logo.png" alt="Zadania"></a>
+    <a href="../index.html"><img src="../img/logo.svg" onerror="this.onerror=null; this.src='../img/logo.png'"></a>
 				</header>
 						<main class="zaokTOP">
 								<nav class="zaokTOP">
 										<a href="../index.html">Zadania</a>
 										<a href="../inne/index.html">Skrypty</a>
 										<a href="#">Kontakt</a>
+										<a href="../podstrony/dodatki.html">Dodatki</a>
 								</nav>
 										<h1>Kontakt</h1>
-										<form class="form">
+										<form name="form" class="form">
 												<p class="imie">
 														<input type="text" name="imie" id="imie"
 																	   placeholder="Podaj swoje Imię" tabindex="1">
 												<label for="imie">Imię</label>
 												</p>
 												<p class="email">
-														<input type="email" name="emain" id="email"
+														<input type="email" name="email" id="email"
 															   placeholder="twoj@email.com" tabindex="2">
 														<label for="email">E-mail</label>
 												</p>
 												<p class="tel">
 														<input type="tel" name="tel" id="tel"
-															   pattern="[0-9]{3}[0-9]{3}[0-9]{3}"
 															   placeholder="Numer telefonu" tabindex="3">
 														<label for="tel">Numer telefonu (FORMAT:123456789)</label>
 												</p>
 												<p class="tresc">
 														<textarea name="tresc" id="tresc"
 																  placeholder="Treść wiadomości"
-																  tabindex="4"></textarea>
+																  tabindex="4" required></textarea>
 														<label for="tresc"></label>
 												</p>
 												<p>
 														<span
 																class="wyslij"><input type="submit" value="Wyślij"
-																					  tabindex="5"></span>
+																					  tabindex="5"
+																					  onclick="walidacja(document.form.email, document.form.tel)"></span>
 														<span class="reset"><input type="reset" value="Wyczyść" ></span>
 												</p>
 										</form>
@@ -120,6 +150,12 @@
 								<p><iframe
 										src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2357.396137570968!2d20.4698866!3d53.7824367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e27edae9a1bacf%3A0x97eef5767fcf63ad!2sAlpo!5e0!3m2!1spl!2spl!4v1573405439245!5m2!1spl!2spl" style="border:0; width: 100%; height:300px;" allowfullscreen=""></iframe></p>
 						</aside>
-				<footer><p>Damian Szefler Copyright 2019</p></footer>
+								<footer><p>Damian Szefler Copyright 2019</p>
+						<a href="https://www.facebook.com/"><img src="../img/fb.png"></a>
+						<a href="https://www.youtube.com/"><img src="../img/yt.png"></a>
+						<a href="https://www.twitter.com/"><img src="../img/tw.png"></a>
+						<a href="https://www.github.com/scyzoryk966"><img src="../img/github.png" style="filter:
+						invert(100%)"></a>
+				</footer>
 		</body>
 </html>

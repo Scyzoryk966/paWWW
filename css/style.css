@@ -98,6 +98,8 @@ header {
 }
 
 header img {
+    width: 10%;
+    height: 10%;
     transition: all 0.1s ease-in;
 }
 
@@ -106,7 +108,7 @@ header img:hover {
 }
 
 nav {
-    float: left;
+    float: none;
     margin-bottom: 15px;
     background-color: #232323;
     width: 96%;
@@ -193,6 +195,9 @@ aside.bottom p {
 
 footer {
     float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #232323;
     width: 90%;
     margin-top: 1%;
@@ -202,9 +207,18 @@ footer {
 }
 
 footer p {
+    display: inline-block;
+    position: relative;
     text-align: center;
 }
-
+footer img {
+    display: inline-block;
+    float: right;
+    margin-top: 2.5%;
+    padding-right: 15px;
+    width: 30px;
+    height: 30px;
+}
 #zegar {
     font-size: 2em;
     font-family: Digital, monospace;
@@ -285,6 +299,7 @@ pre {
     padding: 3%;
 }
 
+
 @media screen and (max-width: 1100px) {
     .tarcza {
         font-size: 0.8em;
@@ -298,7 +313,8 @@ pre {
     }
 
     header img {
-        max-height: 200px;
+        width: 20%;
+        height: 20%;
     }
 
     nav {
@@ -316,7 +332,7 @@ pre {
     }
 
     main ol {
-        padding-left: 10%;
+        padding-left: 1%;
         padding-right: 10%;
     }
 
@@ -325,7 +341,10 @@ pre {
         font-size: 2em;
         padding: 15px;
     }
-
+    #zegar {
+        margin-top:5%;
+        margin-bottom:1%;
+    }
     .tarcza {
         font-size: 2em;
         padding: 40px 20px;
@@ -347,6 +366,11 @@ pre {
     footer p {
         text-align: center;
         padding: 15px;
+    }
+    @media screen and (max-width: 400px) {
+        nav{
+            line-height: 50px;
+        }
     }
 }
 
