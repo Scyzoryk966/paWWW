@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -281,7 +283,7 @@ footer img {
 
 
 h1 {
-    font-family: "Times New Roman";
+    font-family: 'Lato', sans-serif;
     text-align: center;
     font-size: 2em;
     padding: 30px;
