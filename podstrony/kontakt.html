@@ -39,9 +39,10 @@
 				.wyslij input {
 						display: inline-block;
 						font-family: Tahoma, sans-serif;
+						font-weight: 600;
 						width: 100px;
 						color: white;
-						background-color: #ac9237;
+						background-color: #876d2e;
 						margin-bottom: 2%;
 				}
 
@@ -50,11 +51,12 @@
 						float: right;
 						margin-right: 10%;
 						font-family: Tahoma, sans-serif;
+						font-weight: 600;
 						width: 100px;
 						margin-bottom: 2%;
-						background-color: #c82e39;
+						background-color: #821d23;
 						border-color: #c82e39;
-						color: #1a190d;
+						color: White;
 				}
 
 				.reset input:hover {
@@ -93,7 +95,7 @@
 </head>
 <body onload="startTime()">
 <header>
-		<a href="../index.html"><img src="../img/logo.svg" alt="JavaScript - wróć do strony głównej"
+		<a tabindex="-1" href="../index.html"><img src="../img/logo.svg" alt="JavaScript - wróć do strony głównej"
 									 onerror="this.onerror=null;this.src='img/logo.png'"></a>
 </header>
 <main class="zaokTOP">
@@ -107,31 +109,31 @@
 		<form name="form" class="form">
 				<p class="imie">
 						<input type="text" name="imie" id="imie"
-							   placeholder="Podaj swoje Imię" tabindex="1">
+							   placeholder="Podaj swoje Imię" tabindex="0">
 						<label for="imie">Imię</label>
 				</p>
 				<p class="email">
 						<input type="email" name="email" id="email"
-							   placeholder="twoj@email.com" tabindex="2">
+							   placeholder="twoj@email.com" tabindex="0">
 						<label for="email">E-mail</label>
 				</p>
 				<p class="tel">
 						<input type="tel" name="tel" id="tel"
-							   placeholder="Numer telefonu" tabindex="3">
+							   placeholder="Numer telefonu" tabindex="0">
 						<label for="tel">Numer telefonu (FORMAT:123456789)</label>
 				</p>
 				<p class="tresc">
 														<textarea name="tresc" id="tresc"
 																  placeholder="Treść wiadomości"
-																  tabindex="4" required></textarea>
-						<label for="tresc"></label>
+																  tabindex="0" required></textarea>
+						<label for="tresc" style="display: none">Treść wiadomości</label>
 				</p>
 				<p>
 														<span
 																class="wyslij"><input type="submit" value="Wyślij"
-																					  tabindex="5"
+																					  tabindex="0"
 																					  onclick="walidacja(document.form.email, document.form.tel)"></span>
-						<span class="reset"><input type="reset" value="Wyczyść"></span>
+						<span class="reset"><input type="reset" value="Wyczyść" tabindex=""></span>
 				</p>
 		</form>
 		<div style="width: 100%; height: 15px;"></div>
@@ -152,7 +154,7 @@
 <aside class="bottom zaokTOP">
 		<aside class="top zaokTOP">Mapa</aside>
 		<p>
-				<iframe
+				<iframe title="Mapa"
 						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2357.396137570968!2d20.4698866!3d53.7824367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e27edae9a1bacf%3A0x97eef5767fcf63ad!2sAlpo!5e0!3m2!1spl!2spl!4v1573405439245!5m2!1spl!2spl"
 						style="border:0; width: 100%; height:300px;" allowfullscreen=""></iframe>
 		</p>
