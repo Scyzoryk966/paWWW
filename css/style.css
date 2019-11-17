@@ -56,7 +56,7 @@ table {
 
 @font-face {
     font-family: Digital;
-    font-display: auto;
+    font-display: swap;
     src: url(../font/digital-7mono.ttf);
 }
 

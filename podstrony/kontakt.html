@@ -68,30 +68,7 @@
 						padding: 0;
 				}
 		</style>
-		<script type="text/javascript">
-            function walidacjaemail(email) {
-                if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(form.email.value)) {
-                    return true
-                }
-                alert("Podałeś nieprawidłowy adres email");
-                return false
-            }
 
-            function numertel(input) {
-                var tel = /^(?:\(?\+?48)?(?:[-\.\(\)\s]*(\d)){9}\)?$/;
-                if (input.value.match(tel)) {
-                    return true
-                } else {
-                    alert("Wprowadziłeś nieprawidłowy numer telefonu");
-                    return false
-                }
-            }
-
-            function walidacja(email, tel, txt) {
-                walidacjaemail(email);
-                numertel(tel);
-            }
-		</script>
 </head>
 <body onload="startTime()">
 <header>
@@ -126,7 +103,7 @@
 														<textarea name="tresc" id="tresc"
 																  placeholder="Treść wiadomości"
 																  tabindex="0" required></textarea>
-						<label for="tresc" style="display: none">Treść wiadomości</label>
+						<label for="tresc" style="position: absolute;">Treść wiadomości</label>
 				</p>
 				<p>
 														<span
@@ -168,3 +145,27 @@
 </footer>
 </body>
 </html>
+<script type="text/javascript">
+    function walidacjaemail(email) {
+        if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(form.email.value)) {
+            return true
+        }
+        alert("Podałeś nieprawidłowy adres email");
+        return false
+    }
+
+    function numertel(input) {
+        var tel = /^(?:\(?\+?48)?(?:[-\.\(\)\s]*(\d)){9}\)?$/;
+        if (input.value.match(tel)) {
+            return true
+        } else {
+            alert("Wprowadziłeś nieprawidłowy numer telefonu");
+            return false
+        }
+    }
+
+    function walidacja(email, tel, txt) {
+        walidacjaemail(email);
+        numertel(tel);
+    }
+</script>
