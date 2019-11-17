@@ -12,7 +12,7 @@
 				main input,
 				main textarea {
 						font-family: Tahoma, serif;
-						margin: 5px 10px 7px 5%;
+						margin: 5px 0 7px 5%;
 						padding: 9px;
 						border: 3px solid #ac9237;
 						box-shadow: 4px 4px 10px 3px black;
@@ -28,7 +28,9 @@
 						line-height: 18px;
 						max-width: 87%;
 				}
-
+				main label{
+						padding:10px;
+				}
 				main input:hover,
 				main textarea:hover,
 				main input:focus,
@@ -97,14 +99,14 @@
 				<p class="tel">
 						<input type="tel" name="tel" id="tel"
 							   placeholder="Numer telefonu" tabindex="0">
-						<label for="tel">Numer telefonu (FORMAT:123456789)</label>
+						<label for="tel">Numer telefonu</label>
 				</p>
 				<p class="tresc">
 														<textarea name="tresc" id="tresc"
 																  placeholder="Treść wiadomości"
 																  tabindex="0" required></textarea>
-						<label for="tresc" style="position: absolute;">Treść wiadomości</label>
 				</p>
+				<label for="tresc" style="margin-left: 4%;">Treść wiadomości</label>
 				<p>
 														<span
 																class="wyslij"><input type="submit" value="Wyślij"
