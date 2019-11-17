@@ -297,6 +297,7 @@ p {
 pre {
     font-family: Consolas, monospace;
     background-color: #1a190d;
+    white-space:pre-wrap;
     overflow: no-content;
     color: yellow;
     margin-left: 2%;
@@ -376,7 +377,7 @@ pre {
         padding: 15px;
     }
 
-    @media screen and (max-width: 400px) {
+    @media screen and (max-width: 500px) {
         nav {
             line-height: 50px;
         }
