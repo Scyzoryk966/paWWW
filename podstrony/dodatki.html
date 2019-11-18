@@ -20,6 +20,38 @@
 						filter: invert(90%);
 						width: 50%;
 				}
+				section.galeriabox
+				{
+						display: table;
+						width: 80%;
+						height: auto;
+						padding:30px;
+						margin-left: auto;
+						margin-right: auto;
+						margin-bottom: 1%;
+				}
+				div.galeria {
+						margin: 0.5%;
+						border: 3px solid #c3b818;
+						float: left;
+						width: 180px;
+						transition: all 0.5s ease-in;
+				}
+
+				div.galeria:hover {
+						border: 3px solid #b51841;
+				}
+
+				div.galeria img {
+						width: 100%;
+						height: auto;
+				}
+
+				div.desc {
+						background-color: rgba(0, 0, 0, 0.5);
+						padding: 15px;
+						text-align: center;
+				}
 		</style>
 </head>
 <body onload="startTime()">
@@ -67,9 +99,62 @@
 				<source src="../media/Blue_Dot_Sessions_-_Slow_Rollout.mp3" type="audio/mpeg">
 				Your browser does not support the audio element.
 		</audio>
+
 		<p style="text-align: center; margin-top:-2%;margin-right:-29%;">Utwór autorstwa <a
 				href="https://www.sessions.blue/">Blue Dot
 				Sessions</a></p>
+		<h1>Galeria zdjęć Aleksandry Parasic</h1>
+		<section class="galeriabox">
+				<div class="galeria">
+						<a target="_blank" href="../img/5.jpeg">
+								<img src="../img/5.jpeg" alt="Banan na zółto-fioletowym tle" width="600" height="400">
+						</a>
+						<div class="desc">Banan na zółto-fioletowym tle</div>
+				</div>
+
+				<div class="galeria">
+						<a target="_blank" href="../img/4.jpeg">
+								<img src="../img/4.jpeg" alt="Dzwi oklejone obficie naklejkami (stickerbomb)"
+									 width="600" height="400">
+						</a>
+						<div class="desc">Drzwi do Barku Kanaporlio</div>
+				</div>
+
+				<div class="galeria">
+						<a target="_blank" href="../img/7.jpeg">
+								<img src="../img/7.jpeg" alt="Klisz na tle morza" width="600" height="400">
+						</a>
+						<div class="desc">Klif w San Andreas</div>
+				</div>
+
+				<div class="galeria">
+						<a target="_blank" href="../img/2.jpeg">
+								<img src="../img/2.jpeg" alt="Fasada bloku w kolorach czerni i bieli" width="600"
+								height="400">
+						</a>
+						<div class="desc">Postkomunistyczny blok w Poznaniu</div>
+				</div>
+				<div class="galeria">
+						<a target="_blank" href="../img/3.jpeg">
+								<img src="../img/3.jpeg" alt="Mountains" width="600" height="400">
+						</a>
+						<div class="desc">Add a description of the image here</div>
+				</div>
+				<div class="galeria">
+						<a target="_blank" href="../img/6.jpeg">
+								<img src="../img/6.jpeg" alt="przy stacji metra" width="600" height="400">
+						</a>
+						<div class="desc">Błękitne ławki na stacji w Okinawa'ie</div>
+				</div>
+				<div class="galeria">
+						<a target="_blank" href="../img/1.jpeg">
+								<img src="../img/1.jpeg" alt="Plaża - widok z lotu ptaka" width="600" height="400">
+						</a>
+						<div class="desc">Plaża przy Los Santos</div>
+				</div>
+		</section>
+		<p style="text-align: center; margin-top:-5%;margin-right:-40%;">Zdjęcia autorstwa <a
+				href="http://apasaric.com/">Aleksandar Pasaric</a></p>
 </main>
 <aside class="bottom zaokTOP">
 		<aside id="breadcrumb" class="top zaokTOP">Tu jesteś:</aside>
