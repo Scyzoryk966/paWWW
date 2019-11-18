@@ -363,7 +363,7 @@ pre {
     }
 
     pre {
-        font-size: 1.6em;
+        font-size: 1.2em;
         line-height: 1.1em;
     }
 
@@ -383,6 +383,12 @@ pre {
     @media screen and (max-width: 500px) {
         nav {
             line-height: 50px;
+        }
+        h1 {
+            line-height: 50px;
+        }
+        pre{
+
         }
     }
 }
