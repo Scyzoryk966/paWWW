@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
-
+@import url("normalize.css");
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -66,7 +66,7 @@ table {
 html {
     color: white;
     font-family: Tahoma, serif;
-    font-min-size: 12px;
+    font-size:calc(12px + 0.3vw);
     line-height: 1em;
     background: linear-gradient(to bottom right, #fff051, #a88f0f) no-repeat center center fixed;
     background-size: cover;
@@ -107,6 +107,7 @@ header img {
     width: 10%;
     height: 10%;
     transition: all 0.1s ease-in;
+    filter: drop-shadow(16px 16px 20px black)
 }
 
 header img:hover {
@@ -341,6 +342,7 @@ pre {
         width: 100%;
         padding: 0;
         margin-top: 1%;
+        overflow: hidden;
         margin-right: auto;
         margin-left: auto;
     }
@@ -351,9 +353,9 @@ pre {
     }
 
     aside.top {
+        float:none;
         width: 96%;
         font-size: 2em;
-        padding: 15px;
     }
 
     #zegar {
@@ -383,7 +385,7 @@ pre {
         text-align: center;
         padding: 15px;
     }
-
+}
     @media screen and (max-width: 500px) {
         nav {
             line-height: 50px;
@@ -391,6 +393,5 @@ pre {
         h1 {
             line-height: 50px;
         }
-    }
 }
 
