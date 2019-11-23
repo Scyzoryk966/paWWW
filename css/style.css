@@ -289,6 +289,12 @@ h1 {
     font-size: 2em;
     padding: 30px;
 }
+h2 {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    font-size: 1.4em;
+    padding: 30px;
+}
 span.ref{
     position: absolute;
     font-size: 0.8em;
