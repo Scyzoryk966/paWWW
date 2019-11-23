@@ -151,7 +151,7 @@ nav a:hover {
 
 main {
     float: left;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
     min-height: inherit;
     width: 65%;
     margin-top: 0;
@@ -189,7 +189,7 @@ aside.top {
 }
 
 aside.bottom {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
     margin-left: 1%;
     margin-bottom: 1%;
     border-bottom-right-radius: 10px;
