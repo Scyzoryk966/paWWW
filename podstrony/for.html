@@ -21,7 +21,7 @@
 				<a href="kontakt.html">Kontakt</a>
 				<a href="../podstrony/dodatki.html">Dodatki</a>
 		</nav>
-		<h1>Pętla For</h1></div>
+		<h1>Pętla For</h1>
 		<p>Stworzenie skryptu który ma po kolei wykonać kilka operacji jest proste, jak to przedstawiłem w poprzednich
 				lekcjach kursu. Jednak nierzadko zdarza się iż pewną operację lub sekwencję operacji warto byłoby
 				wykonać wielokrotnie, chociażby z tego względu aby zaoszczędzić sobie pisania. Owszem można skopiować
@@ -36,7 +36,7 @@
 
 		<pre>
 &lt;script type="text/javascript">
-    for (var i=1;i<=50;i++) {
+    for (var i=1;i&lt;=50;i++) {
         if(i%2 !=0){
                 document.write("&lt;br>");
         }
@@ -49,7 +49,7 @@
 </pre>
 
 		<input type="button" id="guzik" value="Kliknij aby wykonać program"/>
-		<script type="text/javascript">
+		<script>
             function wypisz() {
 
 
@@ -74,7 +74,7 @@
 &lt;script type= "text/JavaScript">
     var e=prompt("Podaj liczbe f " , "" );
     var f;
-    for (f=1;f<=e;f++)
+    for (f=1;f&lt;=e;f++)
     {
         document.write("#");
     }
@@ -83,7 +83,7 @@
 </pre>
 		<!--Guzik2!-->
 		<input type="button" id="guzik2" value="Kliknij aby wykonać program"/>
-		<script type="text/javascript">
+		<script>
             function wypisz() {
 
                 var a = prompt("Podaj liczbe kratek ", "");
@@ -106,9 +106,9 @@
     var c;
     var d;
     var e=1;
-    for (c=1;c<=a;c++)
+    for (c=1;c&lt;=a;c++)
         {
-            for (d=1;d<=e;d++)
+            for (d=1;d&lt;=e;d++)
             {
             document.write("#")
             }
@@ -120,7 +120,7 @@
 </pre>
 		<!--Guzik3!-->
 		<input type="button" id="guzik3" value="Kliknij aby wykonać program"/>
-		<script type="text/javascript">
+		<script>
             function wypisz() {
 
                 var a = prompt("Podaj liczbe a ", "");
@@ -153,9 +153,9 @@
     var b=prompt("Podaj liczbe b " , "" );
     var c;
     var d;
-        for (c=1;c<=a;c++)
+        for (c=1;c&lt;=a;c++)
         {
-            for (d=1;d<=b;d++)
+            for (d=1;d&lt;=b;d++)
             {
                 document.write("#")
             }
@@ -166,7 +166,7 @@
 </pre>
 		<!--Guzik4!-->
 		<input type="button" id="guzik4" value="Kliknij aby wykonać program"/>
-		<script type="text/javascript">
+		<script>
             function wypisz() {
 
                 var a = prompt("Podaj liczbe a ", "");
@@ -190,7 +190,7 @@
 		</script>
 		<!--Guzik3!-->
 
-		<script type="text/javascript">
+		<script>
             function wypisz() {
 
                 var a = prompt("Podaj liczbe a ", "");
@@ -223,8 +223,8 @@
     var b=prompt("Podaj liczbe b " , "" );
     var i;
     var j;
-    for(i=a;i<=b;i++) {
-        for (j=a;j<=b;j++)
+    for(i=a;i&lt;=b;i++) {
+        for (j=a;j&lt;=b;j++)
         {
         document.write(j*i+" ")
         }
@@ -234,7 +234,7 @@
 </pre>
 		<!--Guzik5!-->
 		<input type="button" id="guzik5" value="Kliknij aby wykonać program"/>
-		<script type="text/javascript">
+		<script>
             function wypisz() {
 
                 var a = prompt("Podaj liczbe a ", "");
@@ -276,6 +276,6 @@
 														  style="filter: invert(100%)"/></a>
 </footer>
 </body>
-<div style="height: 1em;">
+
 </div>
 </html>
